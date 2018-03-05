@@ -1,0 +1,1410 @@
+[
+    {
+        "id": "5666039",
+        "url": "http://ieeexplore.ieee.org/document/5666039/",
+        "titre": "Variable renewable generation and grid operation",
+        "date": "24-28 Oct. 2010",
+        "type": "conference",
+        "lieu-conference": "Hangzhou, China",
+        "nb-citations": 2,
+        "nb-vues": 561,
+        "resume": "With the advancement in wind and solar technology, now large wind-farms and PV systems are being integrated in the power system. This brings new level of challenges for both protection and planning engineers. This paper reviews the renewable power generation technologies available in the current market and challenges in integrating these in the grid. An introduction is provided for the renewable energy available; including wind, solar and ocean etc. This paper also discusses an example of the large renewable project including system planning; establishing the type of generation sources available and discussion of benefits. The paper also discusses the information required for the planning engineer, types of study and challenges before integrating in the existing system. In the end this paper discusses a real life example and sub-synchronous resonance interaction between wind-farm and series capacitor.",
+        "mots-cles": [
+            "Generators",
+            "Rotors",
+            "Wounds",
+            "Planning",
+            "Reliability",
+            "Wind turbines",
+            "Automatic voltage control"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Amit Jain",
+                "infos-auteur": "Power System Research Center at IIIT, Gachibowli, Hyderabad, India"
+            },
+            {
+                "nom-auteur": "Kamal Garg",
+                "infos-auteur": "Schweitzer Engineering Laboratories, Pullman, WA USA"
+            }
+        ]
+    },
+    {
+        "id": "7286310",
+        "url": "http://ieeexplore.ieee.org/document/7286310/",
+        "titre": "A GPS-free power grid monitoring system over mobile platforms",
+        "date": "26-30 July 2015",
+        "type": "conference",
+        "lieu-conference": "Denver, CO, USA",
+        "nb-vues": 114,
+        "resume": "In smart grids, the deviation of frequency and phase angle serves as an important indicator of abnormal events, the detection of which is critical to maintain reliable and stable operations of the power grid. However, the high cost and low accessibility of current power grid monitoring systems restrict their large-scale deployment over highly distributed microgrids. In this paper, we present a practical frequency and phase angle monitoring system design over mobile platforms, which significantly reduces the cost of power grid monitoring by utilizing the functionalities of modern mobile devices. We harvest the 200 Hz Primary Synchronization Signal (PSS) embedded in the 4G Long Term Evolution (LTE) cellular signal for time synchronization in power grid monitoring, replacing the Pulse-Per-Second (PPS) signal that is retrieved from GPS receivers and being used by current monitoring systems. We implement our system over realistic smartphones with a few peripheral hardware, and realize a frequency monitoring accuracy of 0.2 mHz and a phase angle monitoring accuracy of 0.01 rad. Experiment results compared with the traditional Frequency Disturbance Recorders (FDRs) verify the effectiveness of our proposed system.",
+        "mots-cles": [
+            "Monitoring",
+            "Smart phones",
+            "Power grids",
+            "Synchronization",
+            "Accuracy",
+            "Time-frequency analysis"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Haoyang Lu",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, USA"
+            },
+            {
+                "nom-auteur": "Lingwei Zhan",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, USA"
+            },
+            {
+                "nom-auteur": "Yilu Liu",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, USA"
+            },
+            {
+                "nom-auteur": " Wei Gao",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville, USA"
+            }
+        ]
+    },
+    {
+        "id": "5420809",
+        "url": "http://ieeexplore.ieee.org/document/5420809/",
+        "titre": "Developing a communication infrastructure for the Smart Grid",
+        "date": "22-23 Oct. 2009",
+        "type": "conference",
+        "lieu-conference": "Montreal, QC, Canada",
+        "nb-citations": 115,
+        "nb-vues": 3042,
+        "resume": "The Smart Grid of the future, while expected to affect all areas of the Electric Power System, from Generation, to Transmission, to Distribution, cannot function without an extensive data communication system. Smart Grid has the potential to support high levels of Distributed Generation (DG); however the current standards governing the interconnection of DG do not allow the implementation of several applications which may be beneficial to the grid. This paper discusses some of the Smart Grid applications, and estimates the communication requirements of a medium data intensive Smart Grid device. Two issues that will become very important with the spread of DG are DG Islanding and DG Availability. For each issue, we propose data communication enabled solutions and enhancements.",
+        "mots-cles": [
+            "Smart grids",
+            "Data communication",
+            "Distributed control",
+            "Mesh generation",
+            "Intelligent sensors",
+            "Aging",
+            "Solar power generation",
+            "Wind energy generation",
+            "Electric vehicles",
+            "Home appliances"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "V.K. Sood",
+                "infos-auteur": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa L1H 7K4 (Canada)"
+            },
+            {
+                "nom-auteur": "D. Fischer",
+                "infos-auteur": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa L1H 7K4 (Canada)"
+            },
+            {
+                "nom-auteur": "J.M. Eklund",
+                "infos-auteur": "Faculty of Engineering and Applied Science, University of Ontario Institute of Technology, Oshawa L1H 7K4 (Canada)"
+            },
+            {
+                "nom-auteur": "T. Brown",
+                "infos-auteur": "Wire-IE, Richmond Hill, ON (Canada)"
+            }
+        ]
+    },
+    {
+        "id": "7387000",
+        "url": "http://ieeexplore.ieee.org/document/7387000/",
+        "titre": "Optimal location and optimum charging of electric vehicle based on sensitivity indices",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-vues": 112,
+        "resume": "In this paper, optimum location for charging of electric vehicles (EVs) and its charging strategy in a modified IEEE-34 distribution system is proposed. To determine the optimum location, a 24 hour load demand is varied at given junction nodes and the corresponding voltage sensitivity indexes are determined. These indexes are derived from the inverse Jacobian matrix from the Newton-Raphson power flow analysis and aid in selecting suitable location for charging. Next, in the study, optimum charging of EVs at selected node is discussed based on real time pricing and wind power output data. The peak period gest shifted to valley period wherein real time price is low or wind output is high.",
+        "mots-cles": [
+            "Indexes",
+            "Sensitivity",
+            "Reactive power",
+            "Jacobian matrices",
+            "Energy storage",
+            "Load flow",
+            "Electric vehicles"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Sulabh Sachan",
+                "infos-auteur": "Electrical Engineering Department, MNNIT Allahabad India"
+            },
+            {
+                "nom-auteur": "Nand Kishor",
+                "infos-auteur": "Electrical Engineering Department, MNNIT Allahabad India"
+            }
+        ]
+    },
+    {
+        "id": "7387001",
+        "url": "http://ieeexplore.ieee.org/document/7387001/",
+        "titre": "Multi-party energy management for EV charging station cooperated with PV systems in smart grid",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-vues": 125,
+        "resume": "The owners of PV systems and EV charging station are probably different. Combining PV systems with EV charging station can contribute to more benefit, according to previous research, but also lead to some problem. In order to solve the problem of energy management and profit distribution, a multi-party energy management for EV charging station cooperated with PV systems in smart grid is proposed. Firstly, the feasible model of EV charging energy demand is established based on starting charging time, departure time and SOC, which is varied with the PV power. The actual charging power can be then decided according to the relationship between charging demand and PV power. Finally, the operation profit is distributed to each project using Shapley value method, which considers the contribution of each project. A comprehensive result obtained from simulation tests has shown that the proposed energy management can obviously increase the profit of each party in cooperation mode compared to independent mode, which can be utilized to practical application.",
+        "mots-cles": [
+            "Charging stations",
+            "Energy management",
+            "Smart grids",
+            "Buildings",
+            "Power generation",
+            "Forecasting"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Fuqiang Zou",
+                "infos-auteur": "School of Electric and Electronic Engineering, North China Electric Power University, Beijing, China"
+            },
+            {
+                "nom-auteur": "Nian Liu",
+                "infos-auteur": "School of Electric and Electronic Engineering, North China Electric Power University, Beijing, China"
+            },
+            {
+                "nom-auteur": "Qifang Chen",
+                "infos-auteur": "School of Electric and Electronic Engineering, North China Electric Power University, Beijing, China"
+            }
+        ]
+    },
+    {
+        "id": "8004820",
+        "url": "http://ieeexplore.ieee.org/document/8004820/",
+        "titre": "Real-time orchestration system for intelligent electricity networks",
+        "date": "27-29 June 2017",
+        "type": "conference",
+        "lieu-conference": "Santa Margherita Ligure, Italy",
+        "nb-vues": 43,
+        "resume": "The share of decentralized power generation is increasing, which causes general changes and challenges for the conventional power system. Hence, distribution system operators (DSO) need new technologies to ensure the stability of the entire electrical power system. As a feasible solution for structuring power networks, the Clustering Power System Approach (CPSA) has been introduced, providing an innovative and reasonable way of decentralisation for future-oriented power systems. With this approach, based on the Cluster Fractal Model, the stabilization of the power systems can be realized in a bottom-up direction from decentralized generation units in distribution grids to the upstream transmission grids. However, to accomplish smart operations in such decentralized and intelligent electricity networks an appropriate strategy for the interoperation between cluster areas is needed. To realize this concept this paper proposes a real-time orchestration system as a core functionality of Smart Grid Cluster Controllers (SGCC) to run the distribution control and management functions. Hereby, the characteristic needs of such functions inside or between clusters can be taken into account. Structural or hierarchical dependencies of the functions can also be considered. Lastly, the SGCC is implemented on different hardware platforms.",
+        "mots-cles": [
+            "Power system stability",
+            "Real-time systems",
+            "Schedules",
+            "Control systems",
+            "Smart grids",
+            "Process control",
+            "Databases"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "A. Schmelter",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "S. Leksawat",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "E. Ortjohann",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "D. Holtschulte",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "J. Kortenbruck",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "T. Premgamone",
+                "infos-auteur": "South Westphalia University of Applied Science/Division Soest, Lübecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "D. Morton",
+                "infos-auteur": "The University of Bolton, Deane Road, UK"
+            }
+        ]
+    },
+    {
+        "id": "6755739",
+        "url": "http://ieeexplore.ieee.org/document/6755739/",
+        "titre": "Load forecasting based on weighted kernel partial least squares algorithm in smart grid",
+        "date": "7-9 Dec. 2012",
+        "type": "conference",
+        "lieu-conference": "Shenzhen, China",
+        "nb-vues": 54,
+        "resume": "In order to improve the accuracy of electricity consumption forecasting in smart grid, a novel penalized weighted kernel partial least squares algorithm is presented. The original inputs are mapped into a high dimensional feature space to realize the linearization of nonlinear problems. The partial least squares algorithm is used to extract the principal component to reduce the dimensional of data. According to the local learning theory, a weighted least squares regression model is constructed based on the new data set formed by the principal component. The model sensitivity of abnormal data is reduced and the model parameters are optimized.The data from industrial electricity consumption of Jiangsu province in 2008 are used for validation and the results show that WK-PLS has higher accuracy than PLS in electricity load prediction.",
+        "auteurs": [
+            {
+                "nom-auteur": " Li qiang Hou",
+                "infos-auteur": "Sch. of Manage., Hefei Univ. of Technol., Hefei, China"
+            },
+            {
+                "nom-auteur": " Shan lin Yang",
+                "infos-auteur": "Sch. of Manage., Hefei Univ. of Technol., Hefei, China"
+            },
+            {
+                "nom-auteur": " Xiao jia Wang",
+                "infos-auteur": "Sch. of Manage., Hefei Univ. of Technol., Hefei, China"
+            },
+            {
+                "nom-auteur": " Hui zhou Liu",
+                "infos-auteur": "Sch. of Manage., Hefei Univ. of Technol., Hefei, China"
+            }
+        ]
+    },
+    {
+        "id": "7386981",
+        "url": "http://ieeexplore.ieee.org/document/7386981/",
+        "titre": "Aggregate wind power plant collection network modeling — Error sources and magnitudes",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-vues": 49,
+        "resume": "Wind power plants may need to be modeled as aggregate models for power system studies. The aggregation is typically done by scaling up the relevant wind power plant components, and representing the wind power plant collection network either by equivalent parameters or omitting the collection network representation. The collection network representation in an aggregate wind power plant model has influence on the precision of wind power plant internal power losses and reactive power feed. The equivalent collection network parameters in an aggregate model provide accurate results for active and reactive power in the case of identical operation of the wind turbines. This paper analyses the aggregate model collection network representation accuracy and related errors of different wind power plant topologies and wind power plant operating states in the case of un-identical operation of wind turbines. Different wind turbine sizes, wind turbine spacing, and collection network voltage levels are considered.",
+        "mots-cles": [
+            "Aggregates",
+            "Reactive power",
+            "Wind turbines",
+            "Wind power generation",
+            "Network topology",
+            "Topology",
+            "Load modeling"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Sanna Uski",
+                "infos-auteur": "Smart energy and system integration, VTT Technical Research Centre of Finland Ltd, Espoo, Finland"
+            }
+        ]
+    },
+    {
+        "id": "7386999",
+        "url": "http://ieeexplore.ieee.org/document/7386999/",
+        "titre": "EV charging station design with PV and energy storage using energy balance analysis",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-citations": 2,
+        "nb-vues": 224,
+        "resume": "Electric Vehicles (EVs) have the potential to provide numerous ancillary services to the grid owing to the fact that they can act as either loads or sources when connected to the grid. However, customers are still disinclined to embrace this technology because of long battery charging time, limited range, and high battery replacement costs. Widespread rollout of fast Electric Vehicle Charging Stations (EVCS), however, could solve these shortcomings as they make services readily available for them and work as the stimulus for the future growth. Seemingly, reliability of those services by EVCS depends upon the optimum design of it, since over-dimensioning may render it as uneconomical or conversely, technically unreliable for the case of under-dimensioning. In this paper, an algorithm is developed for optimum sizing of Photovoltaic (PV) panel, Battery Energy Storage System (BESS) and Grid Transformer for an EVCS circumscribed by the grid constraints.",
+        "mots-cles": [
+            "Batteries",
+            "Charging stations",
+            "Electric vehicles",
+            "Erbium",
+            "Energy states",
+            "Time series analysis"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Md Shariful Islam",
+                "infos-auteur": "School of ITEE, The University of Queensland, Brisbane, Australia-4072"
+            },
+            {
+                "nom-auteur": "N. Mithulananthan",
+                "infos-auteur": "School of ITEE, The University of Queensland, Brisbane, Australia-4072"
+            },
+            {
+                "nom-auteur": "Krischonme Bhumkittipich",
+                "infos-auteur": "Department of Electrical Engineering, Rajamangala University of Technology Thanyaburi, Thanyaburi, Thailand"
+            },
+            {
+                "nom-auteur": "Arthit Sode-yome",
+                "infos-auteur": "Power System Control and Operation Division, EGAT, Thailand, Bang Kruai, Nonthaburi 11130"
+            }
+        ]
+    },
+    {
+        "id": "6584045",
+        "url": "http://ieeexplore.ieee.org/document/6584045/",
+        "titre": "Guest Editorial: Introduction to the special section on planning and operation of transmission grid with applications to smart grid& - From concept to implementation",
+        "date": "22 August 2013 ",
+        "type": "publication",
+        "nb-vues": 520,
+        "resume": "This special section addresses the challenges and opportunities for the development of a transmission grid with applications to smart grid and brings together the most recent advances from concept to implementation in the field of transmission operation, control, and planning worldwide. The special section covers the design and planning of operation and communication systems of smart transmission grids; state estimation of smart transmission grids; smart voltage and power flow control as well as generalized power network management; wind generation and emission constrained despatching for smart grids; smart demand as power grid services; wide area monitoring, control as well as emergency control. A summary is provided for each of the articles and features presented in this special section.",
+        "mots-cles": [
+            "Special issues and sections",
+            "Power system planning",
+            "Voltage control",
+            "Power system control",
+            "Wind energy generation",
+            "Electric vehicles",
+            "Power system economics"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Xiao-Ping Zhang",
+                "infos-auteur": "University of Birmingham, Birmingham, UK"
+            },
+            {
+                "nom-auteur": "Ronnie Belmans",
+                "infos-auteur": "Katholieke Universiteit Leuven, Leuven, Belgium"
+            },
+            {
+                "nom-auteur": "Daniel Kirschen",
+                "infos-auteur": "Department of Electrical Engineering, University of Washington, Seattle, WA, USA"
+            },
+            {
+                "nom-auteur": "David Sun",
+                "infos-auteur": "Alstom Grid, Seattle, WA, USA"
+            },
+            {
+                "nom-auteur": "Ebrahim Vaahedi",
+                "infos-auteur": "BC Hydro, Vancouver, Canada"
+            },
+            {
+                "nom-auteur": "Yusheng Xue",
+                "infos-auteur": "State Grid EPRI, Nanjing, China"
+            }
+        ]
+    },
+    {
+        "id": "8004819",
+        "url": "http://ieeexplore.ieee.org/document/8004819/",
+        "titre": "Data management and visualization for cluster-based grid operations",
+        "date": "27-29 June 2017",
+        "type": "conference",
+        "lieu-conference": "Santa Margherita Ligure, Italy",
+        "nb-vues": 40,
+        "resume": "The concept of smart grids has been widely introduced to cope with energy transition towards sustainable energy, which results in decentralization of the energy supply. Among various solutions to accomplish the smart grids, clustering power systems approach (CPSA) is proposed. This approach creates active decentralized areas in the form of interconnected cluster areas equipped with their own controller. The CPSA can be flexibly applied at any grid level in a manner that enables consistency in both grid structure and control. In this paper, to facilitate implementation of the CPSA, a data management infrastructure is proposed for the controller. It enables scalability, interoperability, and flexibility to the cluster area applications. In addition, to support users in monitoring of the cluster areas, data visualization on the web-based graphical user interface of the controller is presented. Lastly, a demonstration of applying the data management and data visualization is delivered.",
+        "mots-cles": [
+            "Data visualization",
+            "Smart grids",
+            "Graphical user interfaces",
+            "Power system stability",
+            "Database systems"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "S. Leksawat",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "A. Schmelter",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "E. Ortjohann",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "T. Premgamone",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "D. Holtschulte",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "J. Kortenbruck",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, Germany"
+            },
+            {
+                "nom-auteur": "D. Morton",
+                "infos-auteur": "The University of Bolton, Deane Road, U.K"
+            }
+        ]
+    },
+    {
+        "id": "7922570",
+        "url": "http://ieeexplore.ieee.org/document/7922570/",
+        "titre": "Variable Selection Methods for Probabilistic Load Forecasting: Empirical Evidence from Seven States of the United States",
+        "date": "09 May 2017 ",
+        "type": "publication",
+        "nb-vues": 185,
+        "resume": "Variable selection is the process of selecting a subset of relevant variables for use in model construction. It is a critical step in forecasting but has not yet played a major role in the load forecasting literature. In probabilistic load forecasting, many methodologies to date rely on the variable selection mechanisms inherited from the point load forecasting literature. Consequently, the variables of an underlying model for probabilistic load forecasting are selected by minimizing a point error measure. On the other hand, a holistic and seemingly more accurate method would be to select variables using probabilistic error measures. Nevertheless, this holistic approach by nature requires more computational efforts than its counterpart. As the computing technologies are being greatly enhanced over time, a fundamental research question arises: can we significantly improve the forecast skill by taking the holistic yet computationally intensive variable selection method? This paper tackles the variable selection problem in probabilistic load forecasting by proposing a holistic method (HoM) and comparing it with a heuristic method (HeM). HoM uses a probabilistic error measure to select the variables to construct the underlying model for probabilistic forecasting, which is consistent with the error measure used for the final probabilistic forecast evaluation. HeM takes a shortcut by relying on a point error measure for variable selection. The evidence from the empirical study covering seven states of the United States suggests that 1) the two methods indeed return different variable sets for the underlying models, and 2) HoM slightly outperforms but does not dominate HeM w.r.t. the skill of probabilistic load forecasts. Nevertheless, the conclusion might vary on other datasets. Other empirical studies of the same nature would be encouraged as part of the future work.",
+        "mots-cles": [
+            "Load forecasting",
+            "Load modeling",
+            "Probabilistic logic",
+            "Predictive models",
+            "Input variables",
+            "Forecasting",
+            "Measurement uncertainty"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Jingrui Xie",
+                "infos-auteur": "University of North Carolina at Charlotte, Charlotte, NC, USA, and Dongbei University of Finance and Economics, Dalian, China.(email:hongtao01@gmail.com)"
+            },
+            {
+                "nom-auteur": "Tao Hong",
+                "infos-auteur": null
+            }
+        ]
+    },
+    {
+        "id": "7036319",
+        "url": "http://ieeexplore.ieee.org/document/7036319/",
+        "titre": "MMC technology and its participation in the integration of variable renewable energies and implementation of DC grids",
+        "date": "5-7 Nov. 2014",
+        "type": "conference",
+        "lieu-conference": "Ixtapa, Mexico",
+        "nb-citations": 3,
+        "nb-vues": 423,
+        "resume": "The emerging Modular Multilevel Converters (MMC) technology is expected to play a key role in the construction of DC grids and integration of renewable energy sources (RESs) at bulk to medium and high voltage. The DC option is also perceived as solution to the steady increase in power demand and the collection of disperse conventional and variable generations. These can be achieved while maintaining the control and operation of the grid into the smart grid playground without affecting the environment. Therefore, this paper presents the characteristics of the MMC along with the modulation techniques as well as control methods for MMC-based high multilevel structures. Also the MMC-HVDC advantages for integrating RES are reviewed. At final section the technical and environmental benefits of using MMC for DC grids are discussed.",
+        "mots-cles": [
+            "Voltage control",
+            "Modulation",
+            "Capacitors",
+            "Switches",
+            "Support vector machines",
+            "HVDC transmission",
+            "Converters"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "L. Zuñiga-Garcia",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "A. Zaragoza-Hernández",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "J. M. Nadal-Martínez",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "G. A. Anaya-Ruiz",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "E. L. Moreno-Goytia",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "L. E. Ugalde-Caballero",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            },
+            {
+                "nom-auteur": "V. Venegas-Rebollar",
+                "infos-auteur": "Posgrado en Ingeniería Eléctrica, Instituto Tecnológico de Morelia, Morelia, Michoacán, México"
+            }
+        ]
+    },
+    {
+        "id": "7977681",
+        "url": "http://ieeexplore.ieee.org/document/7977681/",
+        "titre": "Impact of customers flexibility in heat pumps scheduling for demand side management",
+        "date": "6-9 June 2017",
+        "type": "conference",
+        "lieu-conference": "Milan, Italy",
+        "nb-vues": 108,
+        "resume": "In the smart grid scenario, Demand Response (DR) and Demand Side Management (DSM) programs are considered as strategic to obtain a more efficient operation of the grid. The flexibility given by the final customers plays a key role to unlock the potential benefits offered by the application of these schemes. A classical example of flexible load that can be exploited for DR and DSM purposes is the electric heat pump. This paper aims at evaluating the main factors affecting the flexibility available in the management of electric heat pumps for space heating. The performed analysis allows identifying some indexes to quantify the available flexibility and highlights how the thermal comfort requirements of the customers affect the provided level of flexibility. Sample simulations show the impact of these flexibility terms on the results of a DSM program designed for power peak shaving at grid level. The possible use of the defined indexes for sorting the customers flexibility and for estimating the potential benefits offered by the adopted DSM scheme is also investigated and discussed.",
+        "mots-cles": [
+            "Heat pumps",
+            "Optimization",
+            "Resistance heating",
+            "Space heating",
+            "Algorithm design and analysis",
+            "Atmospheric modeling"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Marco Pau",
+                "infos-auteur": "Institute for Automation of Complex Power Systems, E.ON Energy Research Center - RWTH Aachen University, Mathieustrasse 10, 52074 Aachen, Germany"
+            },
+            {
+                "nom-auteur": "Jochen L. Cremer",
+                "infos-auteur": "Institute for Automation of Complex Power Systems, E.ON Energy Research Center - RWTH Aachen University, Mathieustrasse 10, 52074 Aachen, Germany"
+            },
+            {
+                "nom-auteur": "Ferdinanda Ponci",
+                "infos-auteur": "Institute for Automation of Complex Power Systems, E.ON Energy Research Center - RWTH Aachen University, Mathieustrasse 10, 52074 Aachen, Germany"
+            },
+            {
+                "nom-auteur": "Antonello Monti",
+                "infos-auteur": "Institute for Automation of Complex Power Systems, E.ON Energy Research Center - RWTH Aachen University, Mathieustrasse 10, 52074 Aachen, Germany"
+            }
+        ]
+    },
+    {
+        "id": "7327191",
+        "url": "http://ieeexplore.ieee.org/document/7327191/",
+        "titre": "Risk-Based Power System Security Analysis Considering Cascading Outages",
+        "date": "11 November 2015 ",
+        "type": "publication",
+        "nb-citations": 7,
+        "nb-vues": 670,
+        "resume": "Successful development of smart grid demands strengthened system security and reliability, which requires effective security analysis in conducting system operation and expansion planning. Classical N - 1 criterion has been widely used to examine every creditable contingency through detailed computations in the past. The adequacy of such approach becomes doubtful in many recent blackouts where cascading outages are usually involved. This may be attributed to the increased complexities and nonlinearities involved in operating conditions and network structures in context of smart grid development. To address security threats, particularly from cascading outages, a new and efficient security analysis approach is proposed, which comprises cascading failure simulation module (CFSM) for post-contingency analysis and risk evaluation module (REM) based on a decorrelated neural network ensembles (DNNE) algorithm. This approach overcomes the drawbacks of high computational cost in classical N-k-induced cascading contingency analysis. Case studies on two different IEEE test systems and a practical transmission system-Polish 2383-bus system have been conducted to demonstrate the effectiveness of the proposed approach for risk evaluation of cascading contingency.",
+        "mots-cles": [
+            "Security",
+            "Power system faults",
+            "Power system protection",
+            "Load modeling",
+            "Load flow",
+            "Monte Carlo methods",
+            "Computational modeling"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Youwei Jia",
+                "infos-auteur": "Department of Electrical Engineering, Hong Kong Polytechnic University, Hong Kong"
+            },
+            {
+                "nom-auteur": "Zhao Xu",
+                "infos-auteur": "Department of Electrical Engineering, Hong Kong Polytechnic University, Hong Kong"
+            },
+            {
+                "nom-auteur": "Loi Lei Lai",
+                "infos-auteur": " State Grid Energy Research Institute, Beijing, China"
+            },
+            {
+                "nom-auteur": "Kit Po Wong",
+                "infos-auteur": "School of Electrical, Electronics, and Computer Engineering, University of Western Australia, WA, Australia"
+            }
+        ]
+    },
+    {
+        "id": "7733591",
+        "url": "http://ieeexplore.ieee.org/document/7733591/",
+        "titre": "A framework for communication and provisioning in an intelligent secondary substation",
+        "date": "6-9 Sept. 2016",
+        "type": "conference",
+        "lieu-conference": "Berlin, Germany",
+        "nb-vues": 44,
+        "resume": "Gridlink provides a communication infrastructure for the implementation of distributed control systems in Java. It is a completely decentralized solution where the communication partners dynamically form a cluster of known instances during execution. Gridlink uses a distributed event bus based on an asynchronous communication model. A typical Gridlink system is built from a set of modules that execute a distributed application and that communicate with each other by exchanging messages. We present a smart grid use case dealing with the detection and handling of voltage band violations in low voltage networks deployed in secondary substation nodes.",
+        "mots-cles": [
+            "Logic gates",
+            "Low voltage",
+            "Software",
+            "Receivers",
+            "Substations",
+            "Smart grids"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Stephan Cejka",
+                "infos-auteur": "Siemens AG, Corporate Technology, Germany"
+            },
+            {
+                "nom-auteur": "Alexander Hanzlik",
+                "infos-auteur": "Siemens AG, Corporate Technology, Germany"
+            },
+            {
+                "nom-auteur": "Andreas Plank",
+                "infos-auteur": "Siemens AG, Corporate Technology, Germany"
+            }
+        ]
+    },
+    {
+        "id": "8074195",
+        "url": "http://ieeexplore.ieee.org/document/8074195/",
+        "titre": "Comparison of smart grid development in five developed countries with focus on smart grid implementations in India",
+        "date": "20-21 April 2017",
+        "type": "conference",
+        "lieu-conference": "Kollam, India",
+        "nb-vues": 92,
+        "resume": "Smart grid is the future of electricity that can revolutionize the way present electricity grids are monitored and controlled. Smart grid uses highly automated and digitized operation for real time applications. Smart grid is in its developing stage in India. National Smart Grid Mission (NSGM) was launched by Ministry of Power, that plans and monitors policies and programs for development and deployment of smart grid in India. Total of 14 pilot projects and 1 smart city project are announced so far for smart grid development in India. This paper reviews smart grid, along with its various building blocks. Australia, Canada, China, Germany, India, and Japan are comparatively studied, for smart grid development and implementation. Smart grid projects undergoing in these countries along with their technological developments are also described. The driving factors for smart grid development in these countries and India are summarized.",
+        "mots-cles": [
+            "Smart grids",
+            "Smart meters",
+            "Renewable energy sources",
+            "Urban areas",
+            "Monitoring",
+            "Power generation",
+            "Real-time systems"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Akanksha Sharma",
+                "infos-auteur": "Department of Renewable Energy, Rajasthan Technical University, Kota, India"
+            },
+            {
+                "nom-auteur": "Bharat Kumar Saxena",
+                "infos-auteur": "Department of Renewable Energy, Rajasthan Technical University, Kota, India"
+            },
+            {
+                "nom-auteur": "K. V. S. Rao",
+                "infos-auteur": "Department of Renewable Energy, Rajasthan Technical University, Kota, India"
+            }
+        ]
+    },
+    {
+        "id": "7386998",
+        "url": "http://ieeexplore.ieee.org/document/7386998/",
+        "titre": "A comparison of direct worth and relative worth studies for outage cost estimations in industry sectors",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-vues": 47,
+        "resume": "The estimation of customer interruption costs is a challenging task. Understanding the true economic impacts of unwanted power interruptions is a must for planning purposes and for the decision making on electric energy policies. All methodologies that have been adopted to analyze the problem have strong and weak points. This paper presents the outage cost estimations for the small and medium scale industry sector, public sector and service sector customers in Finland by the aid of a customer survey study. The direct worth approach and the relative worth approach are applied for the industry sector customers and the results are compared. The results of public and service sector customers are presented by following the direct worth methodology only.",
+        "mots-cles": [
+            "Interrupters",
+            "Industries",
+            "Estimation",
+            "Biological system modeling",
+            "Economics",
+            "Power systems",
+            "Reliability"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Sinan Küfeoğlu",
+                "infos-auteur": "School of Electrical Engineering, Aalto University, Espoo, Finland"
+            },
+            {
+                "nom-auteur": "Matti Lehtonen",
+                "infos-auteur": "School of Electrical Engineering, Aalto University, Espoo, Finland"
+            }
+        ]
+    },
+    {
+        "id": "8052966",
+        "url": "http://ieeexplore.ieee.org/document/8052966/",
+        "titre": "Design of a low cost DC/AC inverter for integration of renewable energy sources into the smart grid",
+        "date": "6-9 Aug. 2017",
+        "type": "conference",
+        "lieu-conference": "Boston, MA, USA",
+        "nb-vues": 193,
+        "resume": "The Sun has the potential to provide 89,300 tera Watts of power to our planet. Our ability to convert even a fraction of this energy for human use makes a significant impact on current energy generation and consumption trends. World-wide we now add more renewable energy capacity every year than (combined) fossil fuel energy capacity. Solar panels provide a reliable, renewable, non-polluting energy source by converting the Sun's energy to electricity. The biggest challenge faced in this effort to `mainstream' solar energy is system cost. The system presented in this paper addresses this by integrating readily available, low-to-moderately priced components into the inverter design. In order to reduce cost the system utilizes a motor control unit, in a novel way, as a switching device. Reliability of these systems is also an issue in the field and the system described in this paper addresses this issue by ensuring the use of components that have proven track records in industry and digital control allows for robustness, flexibility and scalability of the design. The cost effective inverter system presented in this paper has the potential to help accelerate the growth of residential solar energy usage in developing nations as well as in developed countries.",
+        "mots-cles": [
+            "Inverters",
+            "Pins",
+            "Motor drives",
+            "Pulse width modulation",
+            "Bridge circuits",
+            "Capacitors",
+            "Switches"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Joseph Tompkins",
+                "infos-auteur": "Department of Electrical and Computer Engineering, Western New England University, Springfield MA 01119"
+            },
+            {
+                "nom-auteur": "Matthew Musiak",
+                "infos-auteur": "Department of Electrical and Computer Engineering, Western New England University, Springfield MA 01119"
+            },
+            {
+                "nom-auteur": "Neeraj Magotra",
+                "infos-auteur": "Department of Electrical and Computer Engineering, Western New England University, Springfield MA 01119"
+            }
+        ]
+    },
+    {
+        "id": "8004818",
+        "url": "http://ieeexplore.ieee.org/document/8004818/",
+        "titre": "Local energy markets in Clustering Power System Approach for smart prosumers",
+        "date": "27-29 June 2017",
+        "type": "conference",
+        "lieu-conference": "Santa Margherita Ligure, Italy",
+        "nb-vues": 101,
+        "resume": "Decentralized, renewable energy sources has grown fast as a sustainable and clean alternative energy to overcome the carbon emissions caused by conventional power plants. However, this change leads to several challenges related to grid control, resulting in a need of new smart grid concepts. Therefore, Clustering Power System Approach (CPSA) has been introduced as a suitable smart grid concept. Meanwhile, the impact of small prosumers in power supply operation increases continuously and they will emerge from being passive to become active participants in smart grid and smart market operation. In a previous paper genetic algorithms (GA) has been introduced as an adequate optimization technique tackling the issue of economic optimization of smart prosumers in a case study. In this paper a case study for a whole cluster network with smart prosumers/households operating under individual requirements is carried out. Additionally, a market model containing auction based local energy markets (LEM) suitable to be implemented in the CPSA is introduced. This is the next step to achieve the goal of smart grid and smart market under the foundation of the CPSA. The results show that the GA based optimization in combination with the involvement of LEM provides economic benefits for smart prosumers.",
+        "mots-cles": [
+            "Genetic algorithms",
+            "Optimization",
+            "Economics",
+            "Smart grids",
+            "Renewable energy sources",
+            "Power generation"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "D. Holtschulte",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "A. S. Erlangga",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "E. Ortjohann",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "J. Kortenbruck",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "S. Leksawat",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "A. Schmelter",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "T. Premgamone",
+                "infos-auteur": "South Westphalia University of Applied Sciences/Division Soest, Luebecker Ring 2, 59494, (Germany)"
+            },
+            {
+                "nom-auteur": "D. Morton",
+                "infos-auteur": "University of Bolton, Deane Road, (U.K.)"
+            }
+        ]
+    },
+    {
+        "id": "8260201",
+        "url": "http://ieeexplore.ieee.org/document/8260201/",
+        "titre": "Comparative analysis of online estimation algorithms for battery energy storage systems",
+        "date": "26-29 Sept. 2017",
+        "type": "conference",
+        "lieu-conference": "Torino, Italy",
+        "nb-vues": 13,
+        "resume": "Reliability of battery energy storage systems (BESS) used for online applications, such as electric vehicles and smart grid, depends heavily on the accuracy and rapidness of the state of charge (SOC) estimation. Moreover, to achieve a robust SOC estimation, the battery model parameter identification process is of significant importance. This paper examines a combination of the adaptive unscented Kalman filter (AUKF) and the fast upper diagonal recursive least square (FUDRLS) for the parameter identification and SOC estimation processes, respectively. The analysis focuses on on-line applications and the results are compared with previous work. Experimental validation based on various setups and load conditions is conducted, whereas the advantages of the proposed combination are highlighted.",
+        "mots-cles": [
+            "State of charge",
+            "Estimation",
+            "Batteries",
+            "Current measurement",
+            "Electronic countermeasures",
+            "Battery charge measurement",
+            "Integrated circuit modeling"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "N. A. Michailidis",
+                "infos-auteur": "School of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece"
+            },
+            {
+                "nom-auteur": "N. A. Bezas",
+                "infos-auteur": "School of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece"
+            },
+            {
+                "nom-auteur": "G. S. Misyris",
+                "infos-auteur": "School of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece"
+            },
+            {
+                "nom-auteur": "D. I. Doukas",
+                "infos-auteur": "School of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece"
+            },
+            {
+                "nom-auteur": "D. P. Labridis",
+                "infos-auteur": "School of Electrical and Computer Engineering, Aristotle University of Thessaloniki, Thessaloniki, Greece"
+            },
+            {
+                "nom-auteur": "A. G. Marinopoulos",
+                "infos-auteur": "Joint Research Centre of the European Commission, Directorate C - Energy, Transport and Climate, Petten, The Netherlands"
+            }
+        ]
+    },
+    {
+        "id": "7778146",
+        "url": "http://ieeexplore.ieee.org/document/7778146/",
+        "titre": "Multi-UAV Pre-positioning and Routing for Power Network Damage Assessment",
+        "date": "08 December 2016 ",
+        "type": "publication",
+        "nb-vues": 246,
+        "resume": "This paper presents a two-phase mathematical framework for efficient power network damage assessment using unmanned aerial vehicle (UAV). In the first phase, a two-stage stochastic integer programming optimization model is presented for damage assessment in which the first stage determines the optimal UAV locations anticipating an arrival of an extreme weather event, and the second stage is to adjust the UAV locations, if necessary, when the arrival time of the predicted extreme weather becomes closer with updated information. UAV paths to scan the power network are generated in the second phase to minimize operating costs and final damage assessment completion time of the UAVs. Computational techniques are developed to help reduce the solution time. Numerical experiments show that the proposed stochastic model outperforms the deterministic counterpart in terms of the total UAV pre-positioning setup cost. Additionally, sensitivity analysis discovered the relations among damage assessment time, UAV pre-positioning setup cost, and operating cost.",
+        "mots-cles": [
+            "Unmanned aerial vehicles",
+            "Inspection",
+            "Optimization",
+            "Mathematical model",
+            "Weather forecasting",
+            "Helicopters"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Gino J. Lim",
+                "infos-auteur": "Department of Industrial Engineering, University of Houston, TX 77204 USA.(Email: ginolim@uh.edu)"
+            },
+            {
+                "nom-auteur": "Seonjin Kim",
+                "infos-auteur": null
+            },
+            {
+                "nom-auteur": "Jaeyoung Cho",
+                "infos-auteur": null
+            },
+            {
+                "nom-auteur": "Yibin Gong",
+                "infos-auteur": null
+            },
+            {
+                "nom-auteur": "Amin Khodaei",
+                "infos-auteur": null
+            }
+        ]
+    },
+    {
+        "id": "6308749",
+        "url": "http://ieeexplore.ieee.org/document/6308749/",
+        "titre": "Smart Meter Privacy: A Theoretical Framework",
+        "date": "20 September 2012 ",
+        "type": "publication",
+        "nb-citations": 2,
+        "nb-vues": 2512,
+        "resume": "The solutions offered to-date for end-user privacy in smart meter measurements, a well-known challenge in the smart grid, have been tied to specific technologies such as batteries or assumptions on data usage without quantifying the loss of benefit (utility) that results from any such approach. Using tools from information theory and a hidden Markov model for the measurements, a new framework is presented that abstracts both the privacy and the utility requirements of smart meter data. This leads to a novel privacy-utility tradeoff problem with minimal assumptions that is tractable. For a stationary Gaussian model of the electricity load, it is shown that for a desired mean-square distortion (utility) measure between the measured and revealed data, the optimal privacy-preserving solution: i) exploits the presence of high-power but less private appliance spectra as implicit distortion noise, and ii) filters out frequency components with lower power relative to a distortion threshold; this approach encompasses many previously proposed approaches to smart meter privacy.",
+        "mots-cles": [
+            "Home appliances",
+            "Hidden Markov models",
+            "Privacy",
+            "Data privacy",
+            "Load modeling",
+            "Distortion measurement",
+            "Batteries"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Lalitha Sankar",
+                "infos-auteur": "Department of Electrical Engineering, Princeton University, Princeton"
+            },
+            {
+                "nom-auteur": "S. Raj Rajagopalan",
+                "infos-auteur": "HP Labs, Princeton"
+            },
+            {
+                "nom-auteur": "Soheil Mohajer",
+                "infos-auteur": "Princeton Univ., Princeton, NJ, USA"
+            },
+            {
+                "nom-auteur": "Soheil Mohajer",
+                "infos-auteur": "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley"
+            }
+        ]
+    },
+    {
+        "id": "7386980",
+        "url": "http://ieeexplore.ieee.org/document/7386980/",
+        "titre": "An accuracy evaluation of PV power output estimation method using covariance between solar radiation intensity and power flow",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-citations": 2,
+        "nb-vues": 58,
+        "resume": "We proposed a method for estimating photovoltaic (PV) output in an electrical power system using the power flow measured by a power flow sensor at a substation and the solar radiation intensity obtained from pyranometers installed near the system [14]. In the paper [14], we confirmed that the accuracy of the proposed method is sufficiently high using observed data from a photovoltaic power plant where PVs are concentrated near the pyranometer. However, since PVs has various distributions in many practical situations, accuracy verification of the proposed method under the situations is needed. In this paper, we confirmed that the accuracy of the proposed method is sufficiently high even under the situations that PVs are dispersedly distributed.",
+        "mots-cles": [
+            "Solar radiation",
+            "Estimation",
+            "Load flow",
+            "Photovoltaic systems"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Kazuhiro Yasunami",
+                "infos-auteur": "R&D Center, The Kansai Electric Power Co., Inc., Hyogo, Japan"
+            },
+            {
+                "nom-auteur": "Takashi Washio",
+                "infos-auteur": "The Institute of Scientific and Industrial Research, Osaka University, Osaka, Japan"
+            }
+        ]
+    },
+    {
+        "id": "7453690",
+        "url": "http://ieeexplore.ieee.org/document/7453690/",
+        "titre": "SMES effect in a smart grid with electric vehicles",
+        "date": "20-23 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Shanghai, China",
+        "nb-vues": 36,
+        "resume": "Superconducting magnetic energy storage (SMES) becomes an enabling and emerging technology for power system application. The increasing demand for conventional energy sources and the green house effect are driving societies toward the development of electric vehicles (EVs) and alternate energy sources. This paper aims at investigating the effects of SMES on the smart grid incorporated with EVs.",
+        "mots-cles": [
+            "Charging stations",
+            "Batteries",
+            "Smart grids",
+            "Power system stability",
+            "Stability analysis",
+            "Electric vehicles"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Shan Chuan Wang",
+                "infos-auteur": "Center of Applied Superconductivity and Electrical Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            },
+            {
+                "nom-auteur": "Jian Xun Jin",
+                "infos-auteur": "Center of Applied Superconductivity and Electrical Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            },
+            {
+                "nom-auteur": "Ying Li Wang",
+                "infos-auteur": "Center of Applied Superconductivity and Electrical Engineering, University of Electronic Science and Technology of China, Chengdu 611731, China"
+            }
+        ]
+    },
+    {
+        "id": "6170985",
+        "url": "http://ieeexplore.ieee.org/document/6170985/",
+        "titre": "Interactive Distributed Generation Interface for Flexible Micro-Grid Operation in Smart Distribution Systems",
+        "date": "19 March 2012 ",
+        "type": "publication",
+        "nb-citations": 38,
+        "nb-vues": 4150,
+        "resume": "This paper presents an interactive distributed generation (DG) interface for flexible micro-grid operation in the smart distribution system environment. Under the smart grid environment, DG units should be included in the system operational control framework, where they can be used to enhance system reliability by providing backup generation in isolated mode, and to provide ancillary services (e.g. voltage support and reactive power control) in the grid-connected mode. To meet these requirements, the proposed flexible interface utilizes a fixed power-voltage-current cascaded control structure to minimize control function switching and is equipped with robust internal model control structure to maximize the disturbance rejection performance within the DG interface. The proposed control system facilitates flexible and robust DG operational characteristics such as 1) active/reactive power (PQ) or active power/voltage (PV) bus operation in the grid-connected mode, 2) regulated power control in autonomous micro-grid mode, 3) smooth transition between autonomous mode and PV or PQ grid connected modes and vice versa, 4) reduced voltage distortion under heavily nonlinear loading conditions, and 5) robust control performance under islanding detection delays. Evaluation results are presented to demonstrate the flexibility and effectiveness of the proposed controller.",
+        "mots-cles": [
+            "Voltage control",
+            "Damping",
+            "Robustness",
+            "Harmonic analysis",
+            "Switches",
+            "Mathematical model"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Alireza Kahrobaeian",
+                "infos-auteur": "Department of Electrical and Computer Engineering, University of Alberta, Edmonton, Canada"
+            },
+            {
+                "nom-auteur": "Yasser Abdel-Rady I. Mohamed",
+                "infos-auteur": "Department of Electrical and Computer Engineering, University of Alberta, Edmonton, Canada"
+            }
+        ]
+    },
+    {
+        "id": "7453405",
+        "url": "http://ieeexplore.ieee.org/document/7453405/",
+        "titre": "One day forth forecasting of hourly electrical load using genetically tuned Support Vector Regression for smart grid frame work",
+        "date": "21-22 Dec. 2015",
+        "type": "conference",
+        "lieu-conference": "Chandigarh, India",
+        "nb-vues": 67,
+        "resume": "This paper is dedicated to the analysis and betterment of a very recognized field of research in the field of Electrical Power System, i.e. Short Term Load Forecasting (STLF) which is very essential for utilities to control, manage and schedule generator units. Various available approaches to STLF focus to minimize the training error. This paper presents two forecasting models viz. three-day-trained Support Vector Regression model and parameter optimized Support Vector Regression using Genetic Algorithm. Unlike existing models, these models accomplish accurate forecasting by optimizing the regularized risk function. The models make use of previous three days hourly load data for predicting next day hourly load. They give better results with only three days' training data, and thus have potential to be used for STLF for smart grid in real time.",
+        "mots-cles": [
+            "Support vector machines",
+            "Load modeling",
+            "Load forecasting",
+            "Predictive models",
+            "Forecasting",
+            "Fuels",
+            "Biological system modeling"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Sreenu Sreekumar",
+                "infos-auteur": "Department of Electrical Engineering, Malaviya National Institute of Technology, Jaipur-(302017), India"
+            },
+            {
+                "nom-auteur": "Jatin Verma",
+                "infos-auteur": "Department of Electrical Engineering, Malaviya National Institute of Technology, Jaipur-(302017), India"
+            },
+            {
+                "nom-auteur": " Sujil A",
+                "infos-auteur": "Department of Electrical Engineering, Malaviya National Institute of Technology, Jaipur-(302017), India"
+            },
+            {
+                "nom-auteur": "Rajesh Kumar",
+                "infos-auteur": "Department of Electrical Engineering, Malaviya National Institute of Technology, Jaipur-(302017), India"
+            }
+        ]
+    },
+    {
+        "id": "6040254",
+        "url": "http://ieeexplore.ieee.org/document/6040254/",
+        "titre": "Comparison and Analysis of PON's Access Architectures for Smart Grid Applications",
+        "date": "23-25 Sept. 2011",
+        "type": "conference",
+        "lieu-conference": "Wuhan, China",
+        "nb-citations": 2,
+        "nb-vues": 526,
+        "resume": "Communication system is an important part of the strong Smart Grid, and information access is the key of the strong smart grid communication system. Passive optical network (PON) is the today's most competitive broadband access technology. This paper presents an overview of time-division multiplexing (TDM), wavelength division multiplexing (WDM) and WDM-TDM cascaded PON architectures, and then compares quantitatively their transmission performance under different access bandwidth requirements with the help of Optisystem design software. The comparison and analysis results can provide a theoretical reference to the selection and practical deployment of PON architectures for smart grid applications.",
+        "mots-cles": [
+            "Passive optical networks",
+            "Wavelength division multiplexing",
+            "Optical attenuators",
+            "Optical fibers",
+            "Optical network units",
+            "Bandwidth"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Yonghong Ma",
+                "infos-auteur": "Sch. of Electr. & Electron. Eng., North China Electr. Power Univ., Beijing, China"
+            },
+            {
+                "nom-auteur": "Pan Zhang",
+                "infos-auteur": "Sch. of Electr. & Electron. Eng., North China Electr. Power Univ., Beijing, China"
+            },
+            {
+                "nom-auteur": "Liwei Feng",
+                "infos-auteur": "Sch. of Electr. & Electron. Eng., North China Electr. Power Univ., Beijing, China"
+            }
+        ]
+    },
+    {
+        "id": "7386997",
+        "url": "http://ieeexplore.ieee.org/document/7386997/",
+        "titre": "Application of bi-level programming for profit maximization by transmission investors",
+        "date": "3-6 Nov. 2015",
+        "type": "conference",
+        "lieu-conference": "Bangkok, Thailand",
+        "nb-vues": 44,
+        "resume": "This paper presents the application of bi-level programming to determine the profit maximization for transmission investor in deregulated power markets. We consider a deregulated market comprising merchant transmission investors responsible for transmission expansion and a central market operator responsible for market clearing. The problem is solved using two levels of optimization: Upper level problem, where the objective of the transmission merchant investor is to maximize profits and a Lower level problem, where the objective of the market operator is to maximize the social welfare of the generators and the customers. Transmission investment decisions made in the upper level adjust the transmission constraints in the lower level. The optimal solutions obtained in the lower level are used by transmission investors to calculate the transmission congestion price and profit. The bi-level model is applied on test systems and the results are consistent with the analytical method available in literature.",
+        "mots-cles": [
+            "Artificial neural networks",
+            "Frequency control",
+            "Substations",
+            "Photovoltaic systems",
+            "Batteries",
+            "Inverters"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Harivina Gunnaasankaraan",
+                "infos-auteur": "School of Electrical Engineering and Computer Science, University of Newcastle, Newcastle, Australia"
+            },
+            {
+                "nom-auteur": "Aparna Viswanath",
+                "infos-auteur": "School of Electrical Engineering and Computer Science, University of Newcastle, Newcastle, Australia"
+            },
+            {
+                "nom-auteur": "Kaushik Mahata",
+                "infos-auteur": "School of Electrical Engineering and Computer Science, University of Newcastle, Newcastle, Australia"
+            }
+        ]
+    },
+    {
+        "id": "8051297",
+        "url": "http://ieeexplore.ieee.org/document/8051297/",
+        "titre": "Cyber attack protection and control of microgrids",
+        "date": "26 September 2017 ",
+        "type": "publication",
+        "nb-vues": 174,
+        "resume": "Recently, the smart grid has been considered as a next-generation power system to modernize the traditional grid to improve its security, connectivity, efficiency and sustainability. Unfortunately, the smart grid is susceptible to malicious cyber attacks, which can create serious technical, economical, social and control problems in power network operations. In contrast to the traditional cyber attack minimization techniques, this paper proposes a recursive systematic convolutional U+0028 RSC U+0029 code and Kalman filter U+0028 KF U+0029 based method in the context of smart grids. Specifically, the proposed RSC code is used to add redundancy in the microgrid states, and the log maximum a-posterior is used to recover the state information, which is affected by random noises and cyber attacks. Once the estimated states are obtained by KF algorithm, a semidefinite programming based optimal feedback controller is proposed to regulate the system states, so that the power system can operate properly. Test results show that the proposed approach can accurately mitigate the cyber attacks and properly estimate and control the system states.",
+        "mots-cles": [
+            "Microgrids",
+            "Smart grids",
+            "State estimation",
+            "Covariance matrices",
+            "Mathematical model",
+            "Intelligent sensors"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Md Masud Rana",
+                "infos-auteur": "Faculty of Engineering and Information Technology, University of Technology Sydney, Broadway, NSW 2007, Australia"
+            },
+            {
+                "nom-auteur": "Li Li",
+                "infos-auteur": "Faculty of Engineering and Information Technology, University of Technology Sydney, Broadway, NSW 2007, Australia"
+            },
+            {
+                "nom-auteur": "Steven W. Su",
+                "infos-auteur": "Faculty of Engineering and Information Technology, University of Technology Sydney, Broadway, NSW 2007, Australia"
+            }
+        ]
+    },
+    {
+        "id": "6281521",
+        "url": "http://ieeexplore.ieee.org/document/6281521/",
+        "titre": "Smart grid ready BEMS adopting model-based HVAC control for energy saving",
+        "date": "7-10 May 2012",
+        "type": "conference",
+        "lieu-conference": "Orlando, FL, USA",
+        "nb-citations": 2,
+        "nb-vues": 463,
+        "resume": "The newly developed building energy management system (BEMS) is presented. The main feature of the BEMS is the following 2 technologies. (1) The new air-conditioning control technology for the energy saving of buildings. The method is mainly focused on the compatibility of energy savings and comfort. The energy saving is achieved through the twin coil air handling unit that controls room humidity and temperature independently without energy loss and by the optimal operation of HVAC (Heating, Ventilating and air-conditioning) system, manipulating the supplying airflow temperature to the rooms, room temperature and the humidity. The comfort is kept by the index (PMV: Predicted Mean Vote) that is calculated with room temperature, humidity, radiation temperature, wind velocity and so on. In order to avoid large-scale nonlinear programming for optimal conditions, the driving function is introduced. The effectiveness of the HVAC control technology is proved through a building HVAC data and the simulations using the data. (2) Automated demand responding mechanism. The mechanism has function that predicts how much electricity demand is trimmed for a given reward. It also has ability to communicate with community energy management server for finding appropriate balances between electricity demand and generations.",
+        "mots-cles": [
+            "Buildings",
+            "Electricity",
+            "Energy consumption",
+            "Cooling",
+            "Coils",
+            "Humidity",
+            "Water heating"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "D. Murayama",
+                "infos-auteur": "Toshiba Corporation, Toshiba-cho, Fuchu-city, Tokyo 183-8511 JAPAN"
+            },
+            {
+                "nom-auteur": "K. Mitsumoto",
+                "infos-auteur": "Toshiba Corporation, Toshiba-cho, Fuchu-city, Tokyo 183-8511 JAPAN"
+            },
+            {
+                "nom-auteur": "Y. Takagi",
+                "infos-auteur": "Toshiba Corporation, Toshiba-cho, Fuchu-city, Tokyo 183-8511 JAPAN"
+            },
+            {
+                "nom-auteur": "Y. Iino",
+                "infos-auteur": "Toshiba Corporation, 1-1-1 Shibaura, Minato-ku, Tokyo 105-8001 JAPAN"
+            },
+            {
+                "nom-auteur": "S. Yamamori",
+                "infos-auteur": "Toshiba Corporation, 1-1-1 Shibaura, Minato-ku, Tokyo 105-8001 JAPAN"
+            }
+        ]
+    },
+    {
+        "id": "8260200",
+        "url": "http://ieeexplore.ieee.org/document/8260200/",
+        "titre": "Feasibility study of OFDM-MFSK modulation scheme for smart metering technology",
+        "date": "26-29 Sept. 2017",
+        "type": "conference",
+        "lieu-conference": "Torino, Italy",
+        "nb-vues": 14,
+        "resume": "The Orthogonal Frequency Division Multiplexing based M-ary Frequency Shift Keying (OFDM-MFSK) is a non-coherent modulation scheme which merges MFSK with the OFDM waveform. It is designed to improve the receiver sensitivity in the hard environments where channel estimation is very difficult to perform. In this paper, the OFDM-MFSK is suggested for the smart metering technology and its performance is measured and compared with the ordinary OFDM-BPSK. Our results show that, depending on the MFSK size value (M), the Packet Error Rate (PER) has dramatically improved for OFDM-MFSK. Additionally, the adaptive OFDM-MFSK, which selects the best M value that gives the minimum PER and higher throughput for each Smart Meter (SM), has better coverage than OFDM-BPSK. Although its throughput and capacity are lower than OFDM-BPSK, the connected SMs per sector are higher. Based on the smart metering technology requirements which imply the need for high coverage and low amount of data exchanged between the network and the SMs, The OFDM-MFSK can be efficiently used in this technology.",
+        "mots-cles": [
+            "Binary phase shift keying",
+            "Throughput",
+            "Signal to noise ratio",
+            "OFDM",
+            "Propagation losses",
+            "Receivers"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Ghaith Al-Juboori",
+                "infos-auteur": "Communication Systems and Networks Group-Department of Electrical and Electronic Engineering, University of Bristol, Bristol, United Kingdom"
+            },
+            {
+                "nom-auteur": "Angela Doufexi",
+                "infos-auteur": "Communication Systems and Networks Group-Department of Electrical and Electronic Engineering, University of Bristol, Bristol, United Kingdom"
+            },
+            {
+                "nom-auteur": "Andrew R. Nix",
+                "infos-auteur": "Communication Systems and Networks Group-Department of Electrical and Electronic Engineering, University of Bristol, Bristol, United Kingdom"
+            }
+        ]
+    },
+    {
+        "id": "6889668",
+        "url": "http://ieeexplore.ieee.org/document/6889668/",
+        "titre": "Fault recognition in smart grids by a one-class classification approach",
+        "date": "6-11 July 2014",
+        "type": "conference",
+        "lieu-conference": "Beijing, China",
+        "nb-citations": 4,
+        "nb-vues": 159,
+        "resume": "Due to the intrinsic complexity of real-world power distribution lines, which are highly non-linear and time-varying systems, modeling and predicting a general fault instance is a very challenging task. Power outages can be experienced as a consequence of a multitude of causes, such as damage of some physical components or grid overloads. Smart grids are equipped with sensors that enable continuous monitoring of the grid status, hence allowing the realization of control systems related to different optimization tasks, which can be effectively faced by Computational Intelligence techniques. This paper deals with the problem of faults modeling and recognition in a real-world smart grid, located in the city of Rome, Italy. It is proposed a suitable classication system able to recognize faults on medium voltage feeders. Due to the nature of the available data, the one-class classication framework is adopted. Experiments are presented and discussed considering a three-year period of measurements of fault events gathered by ACEA Distribuzione S.p.A., the company that manages the smart grid system under analysis. Results demonstrate the effectiveness and validity of our approach.",
+        "mots-cles": [
+            "Smart grids",
+            "Computational modeling",
+            "Temperature distribution",
+            "Current measurement",
+            "Transmission line measurements",
+            "Weight measurement"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Enrico De Santis",
+                "infos-auteur": "Dept. of Inf. Eng., Electron., & Telecommun., Sapienza Univ. of Rome, Rome, Italy"
+            },
+            {
+                "nom-auteur": "Lorenzo Livi",
+                "infos-auteur": "Dept. of Comput. Sci., Ryerson Univ., Toronto, ON, Canada"
+            },
+            {
+                "nom-auteur": "Fabio Massimo Frattale Mascioli",
+                "infos-auteur": "Dept. of Inf. Eng., Electron., & Telecommun., Sapienza Univ. of Rome, Rome, Italy"
+            },
+            {
+                "nom-auteur": "Alireza Sadeghian",
+                "infos-auteur": "Dept. of Comput. Sci., Ryerson Univ., Toronto, ON, Canada"
+            },
+            {
+                "nom-auteur": "Antonello Rizzi",
+                "infos-auteur": "Dept. of Inf. Eng., Electron., & Telecommun., Sapienza Univ. of Rome, Rome, Italy"
+            }
+        ]
+    },
+    {
+        "id": "6400273",
+        "url": "http://ieeexplore.ieee.org/document/6400273/",
+        "titre": "Time Synchronization Attack in Smart Grid: Impact and Analysis",
+        "date": "01 January 2013 ",
+        "type": "publication",
+        "nb-citations": 47,
+        "nb-vues": 2518,
+        "resume": "Many operations in power grids, such as fault detection and event location estimation, depend on precise timing information. In this paper, a novel Time Synchronization Attack (TSA) is proposed to attack the timing information in smart grid. Since many applications in smart grid utilize synchronous measurements and most of the measurement devices are equipped with global positioning system (GPS) for precise timing, it is highly probable to attack the measurement system by spoofing the GPS. The effectiveness of TSA is demonstrated for three applications of phasor measurement unit (PMU) in smart grid, namely transmission line fault detection, voltage stability monitoring and event locationing. The validity of TSA is demonstrated by numerical simulations.",
+        "mots-cles": [
+            "Global Positioning System",
+            "Transmission line measurements",
+            "Power transmission lines",
+            "Smart grids",
+            "Correlation",
+            "Synchronization",
+            "Fault detection"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Zhenghao Zhang",
+                "infos-auteur": "School of Physics and Electronic Engineering, Guangzhou University, Guangzhou, China"
+            },
+            {
+                "nom-auteur": "Shuping Gong",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville"
+            },
+            {
+                "nom-auteur": "Aleksandar D. Dimitrovski",
+                "infos-auteur": "Energy and Transportation Sciences Division, Oak Ridge National Lab., Oak Ridge"
+            },
+            {
+                "nom-auteur": "Husheng Li",
+                "infos-auteur": "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville"
+            }
+        ]
+    },
+    {
+        "id": "6939192",
+        "url": "http://ieeexplore.ieee.org/document/6939192/",
+        "titre": "Distributed access control of volatile renewable energy resources",
+        "date": "27-31 July 2014",
+        "type": "conference",
+        "lieu-conference": "National Harbor, MD, USA",
+        "nb-vues": 84,
+        "resume": "In this paper, we develop a general framework of distributed access control which allows for anytime connections and disconnections of volatile renewable energy resources in the power grid. We formally prove that the hard state constraints are satisfied all the time and the asymptotic stability is reached if connections and disconnections only happen for a finite number of times. Our framework and analysis leverage the tools of input-to-state stability and small gain theorems in nonlinear systems. The performance of our framework is illustrated by a case study on frequency control with wind integration.",
+        "mots-cles": [
+            "Power system stability",
+            "Access control",
+            "Power system dynamics",
+            "Stability analysis",
+            "Power grids",
+            "Asymptotic stability",
+            "Frequency control"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Minghui Zhu",
+                "infos-auteur": "Department of Electrical Engineering, Pennsylvania State University, 201 Old Main, University Park, PA, 16802"
+            },
+            {
+                "nom-auteur": "Na Li",
+                "infos-auteur": "Laboratory for Information and Decision Systems, Massachusetts Institute of Technology, 77 Massachusetts Avenue, Cambridge, MA, 02139, and the Department of Electrical Engineering, Harvard University, 29 Oxford Street, Cambridge, MA 02138"
+            },
+            {
+                "nom-auteur": "Wenbo Shi",
+                "infos-auteur": "Smart Grid Energy Research Center, the Department of Mechanical Engineering, University of California, Los Angeles, CA, 90095"
+            },
+            {
+                "nom-auteur": "Rajit Gadh",
+                "infos-auteur": "Smart Grid Energy Research Center, the Department of Mechanical Engineering, University of California, Los Angeles, CA, 90095"
+            }
+        ]
+    },
+    {
+        "id": "7793538",
+        "url": "http://ieeexplore.ieee.org/document/7793538/",
+        "titre": "Reliability evaluation of BLDC drive in refrigeration systems",
+        "date": "23-26 Oct. 2016",
+        "type": "conference",
+        "lieu-conference": "Florence, Italy",
+        "nb-vues": 67,
+        "resume": "Requirements for smart grid are higher efficiency using power electronics and ensuring reliability of components. Refrigeration system is readily used in industries and is now becoming a commonly used household application. Now a day, voltage source inverter based BLDC drive is emerging as a more efficient controller option for refrigeration systems compared to conventional induction motors. Importance of smart grid in today's power scenario has lead to the increasing number of power electronic components for energy efficient operation. It is to be noted that, the reliability analysis of power electronic devices is very important owing to the absence of redundancy in these systems. Due to variable load on BLDC drive in refrigeration system, the component stresses and temperature cycles are necessary to be incorporated for predicting the lifetime and effective design methodologies. The major contribution of this paper is to present the method for reliability analysis of BLDC drive driven by IGBT based inverter and the overall refrigeration system. This particular method can be extended to any drive system in absence of the reliability data from the handbooks or manufacturer catalogs.",
+        "mots-cles": [
+            "Insulated gate bipolar transistors",
+            "Smart grids",
+            "Inverters",
+            "Integrated circuit reliability",
+            "Stress"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Sumant G. Kadwane",
+                "infos-auteur": "Department of Electrical Engineering, Yeshwantrao Chavan College of Engineering, Nagpur, India"
+            },
+            {
+                "nom-auteur": "Jyoti M. Kumbhare",
+                "infos-auteur": "Department of Electrical Engineering, Yeshwantrao Chavan College of Engineering, Nagpur, India"
+            },
+            {
+                "nom-auteur": "S. P. Gawande",
+                "infos-auteur": "Department of Electrical Engineering, Yeshwantrao Chavan College of Engineering, Nagpur, India"
+            },
+            {
+                "nom-auteur": "D. K. Mohanta",
+                "infos-auteur": "Department of Electrical and Electronics Engineering, Birla Institute of Technology, Ranchi, India"
+            }
+        ]
+    },
+    {
+        "id": "7520022",
+        "url": "http://ieeexplore.ieee.org/document/7520022/",
+        "titre": "Effects of solar and wind generation integration on feeder hosting capacity",
+        "date": "3-5 May 2016",
+        "type": "conference",
+        "lieu-conference": "Dallas, TX, USA",
+        "nb-vues": 157,
+        "resume": "With the increased penetration of distributed generation (DG) utilities are beginning to see impacts on their system, especially on the ability of a feeder to accommodate DG. In this paper we introduce a stochastic simulation framework to assess the effects on hosting capacity from solar and wind generation for various loading scenarios. The general approach includes the use of a k-means clustering algorithm for segmenting and grouping the raw wind, solar, and load data to define patterns and assign probabilities to each pattern. Monte Carlo simulations are adopted for calculating probabilistic outcomes for a variety of wind, solar, and load scenarios, with the use of a distribution planning software. The outcomes of the simulations, i.e., statistics of minimum and maximum feeder hosting capacity, are used to derive their probability distribution functions (pdfs). The pdfs of the minimum and maximum hosting capacity provide insights into the effects on loading from various wind and solar DG scenarios. The proposed framework is illustrated for a representative utility feeder.",
+        "mots-cles": [
+            "Wind speed",
+            "Load modeling",
+            "Mathematical model",
+            "Wind power generation",
+            "Random variables",
+            "Stochastic processes",
+            "Clustering algorithms"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Dimitra Apostolopoulou",
+                "infos-auteur": "Smart Grid & Technology, Commonwealth Edison Company, Chicago, IL, USA"
+            },
+            {
+                "nom-auteur": "Kyriakos Anastasopoulos",
+                "infos-auteur": "Smart Grid & Technology, Commonwealth Edison Company, Chicago, IL, USA"
+            },
+            {
+                "nom-auteur": "Shay Bahramirad",
+                "infos-auteur": "Smart Grid & Technology, Commonwealth Edison Company, Chicago, IL, USA"
+            }
+        ]
+    },
+    {
+        "id": "6468371",
+        "url": "http://ieeexplore.ieee.org/document/6468371/",
+        "titre": "Smart Grid Consumer-Provider Relationship Analysis Using System Modeling Approach",
+        "date": "20-23 Nov. 2012",
+        "type": "conference",
+        "lieu-conference": "Besancon, France",
+        "nb-vues": 136,
+        "resume": "One of the main goals in the smart grid development is the continuous evolution of the smart grid as a cyber-physical system to accommodate electricity storage, provide safe power delivery, accommodate the needs of the local communities, facilitate the integration of innovative technologies, and enable active participation of consumers. The main purpose of this paper is to analyze the underlying complexities of the relationship between the consumers and providers in the smart grid in order to facilitate its planning and evolution. We elicit and specify the main actors, processes, and sequences of actions that occur in the smart grid to help smart grid designers properly plan its infrastructure and evolution.",
+        "mots-cles": [
+            "Smart grids",
+            "Electricity",
+            "Schedules",
+            "Conferences",
+            "Privacy",
+            "Electronic mail",
+            "Complexity theory"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "Omar Alriyami",
+                "infos-auteur": "Comput. & Inf. Sci., Masdar Inst. of Sci. & Technol., Abu Dhabi, United Arab Emirates"
+            },
+            {
+                "nom-auteur": "Husam Suleiman",
+                "infos-auteur": "Dept. of Electr. & Comput. Eng., Univ. of Waterloo, Waterloo, ON, Canada"
+            },
+            {
+                "nom-auteur": "Davor Svetinovic",
+                "infos-auteur": "Comput. & Inf. Sci., Masdar Inst. of Sci. & Technol., Abu Dhabi, United Arab Emirates"
+            },
+            {
+                "nom-auteur": "Hatem Zeineldin",
+                "infos-auteur": "Electr. & Power Eng., Masdar Inst. of Sci. & Technol., Abu Dhabi, United Arab Emirates"
+            }
+        ]
+    },
+    {
+        "id": "6465605",
+        "url": "http://ieeexplore.ieee.org/document/6465605/",
+        "titre": "Integration of heat pumps in distribution grids: Economic motivation for grid control",
+        "date": "14-17 Oct. 2012",
+        "type": "conference",
+        "lieu-conference": "Berlin, Germany",
+        "nb-citations": 15,
+        "nb-vues": 284,
+        "resume": "Electric heat pumps combined with heat buffers are important elements in smart grids since they together allow to shift the consumption of electricity in time. In this paper the effects of different control algorithms for heat pumps on the investment costs for distribution grids are investigated. For this, an optimization approach is implemented for a case study within an area where the buildings are only supplied by electricity. The simulations use real smart meter data to generate realistic load curves of households and heat pumps. The calculations show that grid costs increase up to 71% with an inappropriate control and decrease by 10% with an optimal integration of heat pumps. Furthermore, the costs for the reinforcement of the grid are confronted with the benefits on consumer side using flexible price signals. The cost-benefit analysis shows that considering grid restrictions in the context of controllable devices is highly recommended.",
+        "mots-cles": [
+            "Heat pumps",
+            "Water heating",
+            "Resistance heating",
+            "Electricity",
+            "Optimization",
+            "Smart grids"
+        ],
+        "auteurs": [
+            {
+                "nom-auteur": "S. Nykamp",
+                "infos-auteur": "Network planning division of RWE Germany"
+            },
+            {
+                "nom-auteur": "A. Molderink",
+                "infos-auteur": "Faculty of Computer Science, Mathematics and Electrical Engineering, University of Twente, P.O. Box 217, 7500 AE, Enschede, the Netherlands"
+            },
+            {
+                "nom-auteur": "V. Bakker",
+                "infos-auteur": "Faculty of Computer Science, Mathematics and Electrical Engineering, University of Twente, P.O. Box 217, 7500 AE, Enschede, the Netherlands"
+            },
+            {
+                "nom-auteur": "H.A. Toersche",
+                "infos-auteur": "Faculty of Computer Science, Mathematics and Electrical Engineering, University of Twente, P.O. Box 217, 7500 AE, Enschede, the Netherlands"
+            },
+            {
+                "nom-auteur": "J.L. Hurink",
+                "infos-auteur": "Faculty of Computer Science, Mathematics and Electrical Engineering, University of Twente, P.O. Box 217, 7500 AE, Enschede, the Netherlands"
+            },
+            {
+                "nom-auteur": "G.J.M. Smit",
+                "infos-auteur": "Faculty of Computer Science, Mathematics and Electrical Engineering, University of Twente, P.O. Box 217, 7500 AE, Enschede, the Netherlands"
+            }
+        ]
+    }
+]
