@@ -10,7 +10,7 @@ Questions auquelles on a envie de répondre :
 Échelles à prendre en compte (9 niveaux) :
 
 Localisation :
-- par pays (par état pour les état-unis)
+- par pays (par état pour les état-unis, l'inde ?, le Canada)
 - par ville
 - par institut
 
@@ -22,7 +22,7 @@ Temps :
 Métier :
 - par revue
 - par article
-- par auteurs
+- par auteur
 
 
 Modifications éventuelles à réaliser dans la bd pour pouvoir répondre aux questions :
