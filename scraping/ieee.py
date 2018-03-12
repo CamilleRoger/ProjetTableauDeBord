@@ -1,6 +1,7 @@
 import re
 import csv
 import scrapy
+import pycountry
 from scrapy_splash import SplashRequest
 
 
@@ -31,9 +32,13 @@ class IeeeSpider(scrapy.Spider):
         with open('articles.csv', newline='') as fichier_csv:
             lecteur = csv.reader(fichier_csv)
             next(lecteur)
+            compteur = 0  # TODO
             for numero_article in lecteur:
+                compteur += 1  # TODO
+                if compteur >= 20:  # TODO
+                    break  # TODO
                 item = {}
-                item['id'] = numero_article[0]
+                item['id'] = int(numero_article[0])
                 yield SplashRequest(
                     url='http://ieeexplore.ieee.org/document/' + numero_article[0] + '/',
                     callback=self.parse,
@@ -47,7 +52,20 @@ class IeeeSpider(scrapy.Spider):
         try:
             item['date'] = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-confdate.ng-binding.ng-scope::text').extract()[2])
             item['type'] = "conference"
-            item['lieu-conference'] = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-conferenceLoc.ng-binding.ng-scope::text').extract()[2])
+
+            lieu = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-conferenceLoc.ng-binding.ng-scope::text').extract()[2])
+            lieu = lieu.split(", ")
+            lieu_conf = {}
+            if len(lieu) == 2:
+                lieu_conf["ville"] = lieu[0]
+                lieu_conf["pays"] = lieu[1]
+            elif len(lieu) == 3:
+                lieu_conf["ville"] = lieu[0]
+                lieu_conf["etat"] = lieu[1]
+                lieu_conf["pays"] = lieu[2]
+            else:
+                lieu_conf = None
+            item['lieu-conference'] = lieu_conf
         except:
             try:
                 item['date'] = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-pubdate.ng-binding.ng-scope::text').extract()[2])
@@ -84,16 +102,36 @@ class IeeeSpider(scrapy.Spider):
         item = response.meta['item']
         noms_auteurs = response.css('div.pure-u-18-24 > div > a > span.ng-binding::text').extract()
         infos_auteurs = response.css('div.pure-u-18-24 > div.ng-binding::text').extract()
-        nombre_auteurs = len(noms_auteurs)
         auteurs = []
-        for i in range(nombre_auteurs):
+        for i in range(len(noms_auteurs)):
             auteur = {}
             auteur['nom-auteur'] = noms_auteurs[i]
+            nom = [x.name for x in pycountry.countries]
+            dnom = {}
+            for n in nom:
+                dnom[n] = n
+
+            dnom['USA'] = 'United States'
+            dnom['U.K.'] = 'United Kingdom'
+            dnom['U.K'] = 'United Kingdom'
+            dnom['UK'] = 'United Kingdom'
+            dnom['México'] = 'Mexico'
+
+            dnom = {k.lower(): i for k, i in dnom.items()}
+
             try:
-                auteur['infos-auteur'] = infos_auteurs[i]
+                # print(infos_auteurs)
+                res = re.findall("(?=(" + '|'.join(map(re.escape, dnom.keys())) + "))", infos_auteurs[i].lower()) # rechercher les pays parmi le dictionnaire dnom
+                if len(res) == 0:
+                    res = ['usa']
+                auteur['pays-auteur'] = dnom[res[0].lower()]
+                auteur['infos-auteur'] = infos_auteurs[i]  # TODO
             except:
-                auteur['infos-auteur'] = None
+                auteur['pays-auteur'] = None
+
             auteurs.append(auteur)
         item['auteurs'] = auteurs
+
         print("Document n°", item['id'], "récolté.")
+
         yield item
