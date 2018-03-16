@@ -29,28 +29,32 @@ class IeeeSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        with open('articles.csv', newline='') as fichier_csv:
+        nb_article = sum(1 for line in open('articles.csv', 'r', newline=''))
+        with open('articles.csv', 'r', newline='') as fichier_csv:
             lecteur = csv.reader(fichier_csv)
             next(lecteur)
-            compteur = 0  # TODO
+            compteur = 1  # TODO
             for numero_article in lecteur:
-                compteur += 1  # TODO
-                if compteur >= 20:  # TODO
-                    break  # TODO
-                item = {}
-                item['id'] = int(numero_article[0])
-                yield SplashRequest(
-                    url='http://ieeexplore.ieee.org/document/' + numero_article[0] + '/',
-                    callback=self.parse,
-                    meta={'splash': {'args': {'wait': 2}},
-                          'item': item})
+                if compteur <= 1:  # TODO
+                    item = {}
+                    item['id'] = int(numero_article[0])
+                    print("Récupération du document n°", item['id'], '|', compteur, '/', nb_article)
+                    compteur += 1  # TODO
+
+                    yield SplashRequest(
+                        url='http://ieeexplore.ieee.org/document/' + numero_article[0] + '/',
+                        callback=self.parse,
+                        meta={'splash': {'args': {'wait': 2}},
+                              'item': item})
 
     def parse(self, response):
         item = response.meta['item']
         item['url'] = response.url
         item['titre'] = response.css('h1.document-title > span.ng-binding::text').extract_first()
         try:
-            item['date'] = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-confdate.ng-binding.ng-scope::text').extract()[2])
+            date = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-confdate.ng-binding.ng-scope::text').extract()[2])
+            item['date'] = re.compile(r"-\d+").sub('', date)
+
             item['type'] = "conference"
 
             lieu = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-conferenceLoc.ng-binding.ng-scope::text').extract()[2])
@@ -107,31 +111,42 @@ class IeeeSpider(scrapy.Spider):
             auteur = {}
             auteur['nom-auteur'] = noms_auteurs[i]
             nom = [x.name for x in pycountry.countries]
-            dnom = {}
+            dnom = {} # ditionnaire permettant de liée une orthographe à un pays
             for n in nom:
                 dnom[n] = n
 
             dnom['USA'] = 'United States'
+            dnom['United States of America'] = 'United States'
             dnom['U.K.'] = 'United Kingdom'
             dnom['U.K'] = 'United Kingdom'
             dnom['UK'] = 'United Kingdom'
             dnom['México'] = 'Mexico'
+            dnom['JAPAN'] = 'Japan'
+            dnom['Taiwan'] = 'Taiwan'
+            dnom['Iran'] = 'Iran'
+            dnom['INDIA'] = 'India'
+            dnom['Brasil'] = 'Brazil'
+            dnom['UAE'] = 'United Arab Emirates'
+            dnom['NEW ZEALAND'] = 'New Zealand'
+            dnom['Russia'] = 'Russia'
+            dnom['Korea'] = 'Korea'
+            dnom['KOREA'] = 'Korea'
+            dnom['Macedonia'] = 'Macedonia'
+            dnom['Czech Republic'] = 'Czech Republic'
 
-            dnom = {k.lower(): i for k, i in dnom.items()}
+            # dnom = {k.lower(): i for k, i in dnom.items()}
 
             try:
                 # print(infos_auteurs)
-                res = re.findall("(?=(" + '|'.join(map(re.escape, dnom.keys())) + "))", infos_auteurs[i].lower()) # rechercher les pays parmi le dictionnaire dnom
+                res = re.findall("(?=(" + '|'.join(map(re.escape, dnom.keys())) + "))", infos_auteurs[i]) # rechercher les pays parmi le dictionnaire dnom
                 if len(res) == 0:
-                    res = ['usa']
-                auteur['pays-auteur'] = dnom[res[0].lower()]
-                auteur['infos-auteur'] = infos_auteurs[i]  # TODO
+                    res = ['USA']
+                auteur['pays-auteur'] = dnom[res[0]]
+                auteur['infos-auteur'] = infos_auteurs[i]
             except:
                 auteur['pays-auteur'] = None
+                auteur['infos-auteur'] = None
 
             auteurs.append(auteur)
         item['auteurs'] = auteurs
-
-        print("Document n°", item['id'], "récolté.")
-
         yield item
