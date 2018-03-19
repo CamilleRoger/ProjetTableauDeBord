@@ -7,14 +7,18 @@
 -- Table: Articles
 ------------------------------------------------------------*/
 CREATE TABLE Articles(
-	id_article                INT  NOT NULL ,
-	resume                    VARCHAR (25) NOT NULL ,
-	annee_publi               DATETIME NOT NULL ,
-	mois_publi                INT  NOT NULL ,
-	jour_publi                INT  NOT NULL ,
-	duree_conference_associee INT  NOT NULL ,
-	nombre_consultation       INT  NOT NULL ,
-	nombre_citation           INT  NOT NULL ,
+	id_article      INT  NOT NULL ,
+	resume          VARCHAR (25) NOT NULL ,
+	nom_revue       VARCHAR (25)  ,
+	nombre_vue      INT  NOT NULL ,
+	nombre_citation INT  NOT NULL ,
+	url             VARCHAR (25)  ,
+	date_article    DATETIME NOT NULL ,
+	titre           VARCHAR (25) NOT NULL ,
+	type            VARCHAR (25) NOT NULL ,
+	ville           VARCHAR (25)  ,
+	etat            VARCHAR (25)  ,
+	pays            VARCHAR (25)  ,
 	CONSTRAINT prk_constraint_Articles PRIMARY KEY NONCLUSTERED (id_article)
 );
 
@@ -23,9 +27,10 @@ CREATE TABLE Articles(
 -- Table: Auteurs
 ------------------------------------------------------------*/
 CREATE TABLE Auteurs(
-	id_auteur     INT IDENTITY (1,1) NOT NULL ,
-	nom_auteur    VARCHAR (25) NOT NULL ,
-	prenom_auteur VARCHAR (25) NOT NULL ,
+	id_auteur    INT IDENTITY (1,1) NOT NULL ,
+	nom_auteur   VARCHAR (25) NOT NULL ,
+	pays_auteur  VARCHAR (25)  ,
+	infos_auteur VARCHAR (25)  ,
 	CONSTRAINT prk_constraint_Auteurs PRIMARY KEY NONCLUSTERED (id_auteur)
 );
 
@@ -41,28 +46,6 @@ CREATE TABLE Mot_cles(
 
 
 /*------------------------------------------------------------
--- Table: Revue
-------------------------------------------------------------*/
-CREATE TABLE Revue(
-	id_revue  INT IDENTITY (1,1) NOT NULL ,
-	nom_revue VARCHAR (25) NOT NULL ,
-	CONSTRAINT prk_constraint_Revue PRIMARY KEY NONCLUSTERED (id_revue)
-);
-
-
-/*------------------------------------------------------------
--- Table: Institut
-------------------------------------------------------------*/
-CREATE TABLE Institut(
-	id_institut      INT IDENTITY (1,1) NOT NULL ,
-	pays_institut    VARCHAR (25) NOT NULL ,
-	ville_institut   VARCHAR (25) NOT NULL ,
-	etat_us_institut VARCHAR (25)  ,
-	CONSTRAINT prk_constraint_Institut PRIMARY KEY NONCLUSTERED (id_institut)
-);
-
-
-/*------------------------------------------------------------
 -- Table: ecrire
 ------------------------------------------------------------*/
 CREATE TABLE ecrire(
@@ -70,16 +53,6 @@ CREATE TABLE ecrire(
 	id_article          INT  NOT NULL ,
 	id_auteur           INT  NOT NULL ,
 	CONSTRAINT prk_constraint_ecrire PRIMARY KEY NONCLUSTERED (id_article,id_auteur)
-);
-
-
-/*------------------------------------------------------------
--- Table: appartenir
-------------------------------------------------------------*/
-CREATE TABLE appartenir(
-	id_auteur   INT  NOT NULL ,
-	id_institut INT  NOT NULL ,
-	CONSTRAINT prk_constraint_appartenir PRIMARY KEY NONCLUSTERED (id_auteur,id_institut)
 );
 
 
@@ -94,22 +67,8 @@ CREATE TABLE contenir(
 );
 
 
-/*------------------------------------------------------------
--- Table: publier
-------------------------------------------------------------*/
-CREATE TABLE publier(
-	id_article INT  NOT NULL ,
-	id_revue   INT  NOT NULL ,
-	CONSTRAINT prk_constraint_publier PRIMARY KEY NONCLUSTERED (id_article,id_revue)
-);
-
-
 
 ALTER TABLE ecrire ADD CONSTRAINT FK_ecrire_id_article FOREIGN KEY (id_article) REFERENCES Articles(id_article);
 ALTER TABLE ecrire ADD CONSTRAINT FK_ecrire_id_auteur FOREIGN KEY (id_auteur) REFERENCES Auteurs(id_auteur);
-ALTER TABLE appartenir ADD CONSTRAINT FK_appartenir_id_auteur FOREIGN KEY (id_auteur) REFERENCES Auteurs(id_auteur);
-ALTER TABLE appartenir ADD CONSTRAINT FK_appartenir_id_institut FOREIGN KEY (id_institut) REFERENCES Institut(id_institut);
 ALTER TABLE contenir ADD CONSTRAINT FK_contenir_id_article FOREIGN KEY (id_article) REFERENCES Articles(id_article);
 ALTER TABLE contenir ADD CONSTRAINT FK_contenir_id_mot_cle FOREIGN KEY (id_mot_cle) REFERENCES Mot_cles(id_mot_cle);
-ALTER TABLE publier ADD CONSTRAINT FK_publier_id_article FOREIGN KEY (id_article) REFERENCES Articles(id_article);
-ALTER TABLE publier ADD CONSTRAINT FK_publier_id_revue FOREIGN KEY (id_revue) REFERENCES Revue(id_revue);
