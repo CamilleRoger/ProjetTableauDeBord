@@ -1,6 +1,8 @@
 Scraping
 ========
 
+Commande pour lancer le docker Splash : `sudo docker run -p 5023:5023 -p 8050:8050 -p 8051:8051 scrapinghub/splash`
+
 ## Lister les articles
 
 Le fichier `articles.py` contient la spider pour obtenir la liste des numéros d'articles.
