@@ -1,3 +1,11 @@
+BD :
+Auteurs(nom_auteur, pays_auteur, infos_auteur)
+Ecrire(rang_auteur_article, id_article, id_auteur)
+Articles(id_article,resume,nombre_vue,nombre_citation,url,titre,type,ville,etat,pays)
+Contenir(rang_mot_cle_article, id_article, id_mot_cle)
+Mot_cles(mot_cle)
+
+
 Questions auxquelles on a envie de répondre :
 1 les N mots clés les plus fréquents
 2 les N articles les plus cités
@@ -23,3 +31,5 @@ Métier :
 - par revue
 - par article
 - par auteur
+
+
