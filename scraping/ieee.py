@@ -2,8 +2,36 @@ import re
 import csv
 import scrapy
 import pycountry
+from dateutil.parser import parse
 from scrapy_splash import SplashRequest
 
+SOURCES = "articles.csv"
+nb_article = sum(1 for line in open(SOURCES, 'r', newline=''))
+
+
+nom = [x.name for x in pycountry.countries]
+dnom = {} # ditionnaire permettant de liée une orthographe à un pays
+for n in nom:
+    dnom[n] = n
+
+dnom['USA'] = 'United States'
+dnom['United States of America'] = 'United States'
+dnom['U.K.'] = 'United Kingdom'
+dnom['U.K'] = 'United Kingdom'
+dnom['UK'] = 'United Kingdom'
+dnom['México'] = 'Mexico'
+dnom['JAPAN'] = 'Japan'
+dnom['Taiwan'] = 'Taiwan'
+dnom['Iran'] = 'Iran'
+dnom['INDIA'] = 'India'
+dnom['Brasil'] = 'Brazil'
+dnom['UAE'] = 'United Arab Emirates'
+dnom['NEW ZEALAND'] = 'New Zealand'
+dnom['Russia'] = 'Russia'
+dnom['Korea'] = 'Korea'
+dnom['KOREA'] = 'Korea'
+dnom['Macedonia'] = 'Macedonia'
+dnom['Czech Republic'] = 'Czech Republic'
 
 class IeeeSpider(scrapy.Spider):
     name = 'ieee'
@@ -29,17 +57,16 @@ class IeeeSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        nb_article = sum(1 for line in open('articles.csv', 'r', newline=''))
-        with open('articles.csv', 'r', newline='') as fichier_csv:
+        with open(SOURCES, 'r', newline='') as fichier_csv:
             lecteur = csv.reader(fichier_csv)
             next(lecteur)
-            compteur = 1  # TODO
+            compteur = 1
             for numero_article in lecteur:
-                if compteur <= 1:  # TODO
+                if compteur <= 4000:  # TODO
                     item = {}
                     item['id'] = int(numero_article[0])
                     print("Récupération du document n°", item['id'], '|', compteur, '/', nb_article)
-                    compteur += 1  # TODO
+                    compteur += 1
 
                     yield SplashRequest(
                         url='http://ieeexplore.ieee.org/document/' + numero_article[0] + '/',
@@ -51,9 +78,13 @@ class IeeeSpider(scrapy.Spider):
         item = response.meta['item']
         item['url'] = response.url
         item['titre'] = response.css('h1.document-title > span.ng-binding::text').extract_first()
+        item['revue'] = response.css('div.u-pb-1.stats-document-abstract-publishedIn.ng-scope > a.ng-binding::text').extract_first()
         try:
             date = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-confdate.ng-binding.ng-scope::text').extract()[2])
-            item['date'] = re.compile(r"-\d+").sub('', date)
+            if re.match(r"\d+(-\d+)? \w+\.? ", date):
+                item['date'] = parse(re.compile(r"-\d+").sub('', date))
+            else:
+                item['date'] = parse(re.compile(r"-\d+ \w+\.?").sub('', date))
 
             item['type'] = "conference"
 
@@ -72,7 +103,7 @@ class IeeeSpider(scrapy.Spider):
             item['lieu-conference'] = lieu_conf
         except:
             try:
-                item['date'] = re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-pubdate.ng-binding.ng-scope::text').extract()[2])
+                item['date'] = parse(re.compile(r'[\n\r\t]').sub('', response.css('div.u-pb-1.doc-abstract-pubdate.ng-binding.ng-scope::text').extract()[2]))
                 item['type'] = "publication"
             except:
                 item['date'] = None
@@ -110,34 +141,8 @@ class IeeeSpider(scrapy.Spider):
         for i in range(len(noms_auteurs)):
             auteur = {}
             auteur['nom-auteur'] = noms_auteurs[i]
-            nom = [x.name for x in pycountry.countries]
-            dnom = {} # ditionnaire permettant de liée une orthographe à un pays
-            for n in nom:
-                dnom[n] = n
-
-            dnom['USA'] = 'United States'
-            dnom['United States of America'] = 'United States'
-            dnom['U.K.'] = 'United Kingdom'
-            dnom['U.K'] = 'United Kingdom'
-            dnom['UK'] = 'United Kingdom'
-            dnom['México'] = 'Mexico'
-            dnom['JAPAN'] = 'Japan'
-            dnom['Taiwan'] = 'Taiwan'
-            dnom['Iran'] = 'Iran'
-            dnom['INDIA'] = 'India'
-            dnom['Brasil'] = 'Brazil'
-            dnom['UAE'] = 'United Arab Emirates'
-            dnom['NEW ZEALAND'] = 'New Zealand'
-            dnom['Russia'] = 'Russia'
-            dnom['Korea'] = 'Korea'
-            dnom['KOREA'] = 'Korea'
-            dnom['Macedonia'] = 'Macedonia'
-            dnom['Czech Republic'] = 'Czech Republic'
-
-            # dnom = {k.lower(): i for k, i in dnom.items()}
 
             try:
-                # print(infos_auteurs)
                 res = re.findall("(?=(" + '|'.join(map(re.escape, dnom.keys())) + "))", infos_auteurs[i]) # rechercher les pays parmi le dictionnaire dnom
                 if len(res) == 0:
                     res = ['USA']
