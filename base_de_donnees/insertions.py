@@ -9,13 +9,16 @@ import re
 # sudo docker exec -it sql1 "bash"
 
 # Ouvrir le terminal de SQL Server
-# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewSStrong!Passw0rd>'
+# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
 # SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
 
 def echappement(chaine):
-	return re.sub("'", "''", chaine)
+	if chaine is None:
+		return None
+	else:
+		return re.sub("'", "''", chaine)
 
 try:
 	connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourNewStrong!Passw0rd>', database='Base1')
@@ -33,10 +36,12 @@ try:
 				nombre_citation = article['nb-citations']
 			else:
 				nombre_citation = 0
+
 			if "nb-vues" in article:
 				nombre_vue = article['nb-vues']
 			else:
 				nombre_vue = 0
+
 			if "lieu-conference" in article :
 				if article['lieu-conference'] is not None:
 					if "ville" in article['lieu-conference']:
@@ -51,31 +56,26 @@ try:
 						pays = article['lieu-conference']['pays']
 					else:
 						pays = None
+				else:
+						ville = None
+						etat = None
+						pays = None
 			else:
 					ville = None
 					etat = None
 					pays = None
-			if "resume" in article :
-				if article['resume'] is not None:
-					resume = echappement(article['resume'])
-			else:
-				resume = None
-			if "titre" in article:
-				if article['titre'] is not None:
-					titre = echappement(article['titre'])
-			else:
-				titre = None
-			if "type" in article:
-				type_article = article['type']
-			else:
-				type_article = None
+			resume = echappement(article['resume'])
+			revue = echappement(article['revue'])
+			titre = echappement(article['titre'])
+			type_article = article['type']
 			id_article = article['id']
 			url = article['url']
-			# date = article['date']
-			# curseur.execute("SET IDENTITY_INSERT Articles ON")
-			curseur.execute("INSERT INTO Articles(id_article,resume,nombre_vue,nombre_citation,url,titre,type,ville,etat,pays) Values(%d,%s,%d,%d,%s,%s,%s,%s,%s,%s)",
-				(id_article,resume,nombre_vue,nombre_citation,url,titre,type_article,ville,etat,pays))
-			# curseur.execute("SET IDENTITY_INSERT Articles OFF")
+			date = article['date']
+			try:
+				curseur.execute("INSERT INTO Articles(id_article,resume,nom_revue,nombre_vue,nombre_citation,url,date_article,titre,type,ville,etat,pays) Values(%d,%s,%s,%d,%d,%s,%s,%s,%s,%s,%s,%s)",
+					(id_article,resume,revue, nombre_vue,nombre_citation,url,date,titre,type_article,ville,etat,pays))
+			except:
+				pass
 
 			if "mots-cles" in article:
 				rang = 1
