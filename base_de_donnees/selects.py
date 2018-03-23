@@ -28,7 +28,7 @@ try:
 
     curseur.execute("""SELECT ville, count(id_article) as occurences
 					FROM Articles
-					WHERE type = "conference"
+					WHERE type = 'conference'
 					GROUP BY ville
 					ORDER By occurences;""")
     for ligne in curseur:
@@ -36,29 +36,22 @@ try:
 
     curseur.execute("""SELECT etat, count(id_article) as occurences
 					FROM Articles
-					WHERE type = "conference"
+					WHERE type = 'conference'
 					GROUP BY etat
 					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("""SELECT YEAR(date) as annee, count(id_article) as occurences
+    curseur.execute("""SELECT YEAR(date_article), count(id_article) as occurences
 					FROM Articles
-					GROUP BY annee
+					GROUP BY YEAR(date_article)
 					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("""SELECT MONTH(date) as mois, count(id_article) as occurences
+    curseur.execute("""SELECT MONTH(date_article), count(id_article) as occurences
 					FROM Articles
-					GROUP BY année
-					ORDER By occurences;""")
-    for ligne in curseur:
-        print(ligne)
-
-    curseur.execute("""SELECT DAY(date) as jour, count(id_article) as occurences
-					FROM Articles
-					GROUP BY année
+					GROUP BY MONTH(date_article)
 					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
