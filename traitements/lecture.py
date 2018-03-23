@@ -14,11 +14,35 @@ import csv
 
 
 try:
-    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourNewStrong!Passw0rd>', database='Base1')
+    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourStrong!Passw0rd>', database='Base1')
     curseur = connexion.cursor()
 
     curseur.execute("SELECT * FROM Mot_cles")
     with open("mots_cles.csv", "w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
+
+    curseur.execute("SELECT * FROM Articles")
+    with open("articles.csv", "w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
+
+    curseur.execute("SELECT * FROM Auteurs")
+    with open("auteurs.csv", "w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
+
+    curseur.execute("SELECT * FROM ecrire")
+    with open("ecrire.csv", "w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
+
+    curseur.execute("SELECT * FROM contenir")
+    with open("contenir.csv", "w") as csv_file:
         writer = csv.writer(csv_file, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
