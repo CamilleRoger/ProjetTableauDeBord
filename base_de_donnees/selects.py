@@ -19,109 +19,109 @@ try:
     curseur = connexion.cursor()
 
 	# Nombre d'article
-    curseur.execute("SELECT pays, count(id_article) as occurences\
-					FROM Articles\
-					GROUP BY pays\
-					ORDER By occurences;")
+    curseur.execute("""SELECT pays, count(id_article) as occurences
+					FROM Articles
+					GROUP BY pays
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT ville, count(id_article) as occurences\
-					FROM Articles\
-					WHERE type = "conference"\
-					GROUP BY ville\
-					ORDER By occurences;")
+    curseur.execute("""SELECT ville, count(id_article) as occurences
+					FROM Articles
+					WHERE type = "conference"
+					GROUP BY ville
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT etat, count(id_article) as occurences\
-					FROM Articles\
-					WHERE type = "conference"\
-					GROUP BY etat\
-					ORDER By occurences;")
+    curseur.execute("""SELECT etat, count(id_article) as occurences
+					FROM Articles
+					WHERE type = "conference"
+					GROUP BY etat
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT YEAR(date) as annee, count(id_article) as occurences\
-					FROM Articles\
-					GROUP BY annee\
-					ORDER By occurences;")
+    curseur.execute("""SELECT YEAR(date) as annee, count(id_article) as occurences
+					FROM Articles
+					GROUP BY annee
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT MONTH(date) as mois, count(id_article) as occurences\
-					FROM Articles\
-					GROUP BY année\
-					ORDER By occurences;")
+    curseur.execute("""SELECT MONTH(date) as mois, count(id_article) as occurences
+					FROM Articles
+					GROUP BY année
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT DAY(date) as jour, count(id_article) as occurences\
-					FROM Articles\
-					GROUP BY année\
-					ORDER By occurences;")
+    curseur.execute("""SELECT DAY(date) as jour, count(id_article) as occurences
+					FROM Articles
+					GROUP BY année
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT revue, count(id_article) as occurences\
-					FROM Articles\
-					GROUP BY revue\
-					ORDER By occurences;")
+    curseur.execute("""SELECT revue, count(id_article) as occurences
+					FROM Articles
+					GROUP BY revue
+					ORDER By occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT nom_auteur, count(id_article) as occurences\
-					FROM Auteurs AS aut\
-					INNER JOIN Ecrire AS ecr\
-					ON aut.id_auteur = ecr.id_auteur\
-					GROUP BY nom_auteur\
-					ORDER BY occurences;")
+    curseur.execute("""SELECT nom_auteur, count(id_article) as occurences
+					FROM Auteurs AS aut
+					INNER JOIN Ecrire AS ecr
+					ON aut.id_auteur = ecr.id_auteur
+					GROUP BY nom_auteur
+					ORDER BY occurences;""")
     for ligne in curseur:
         print(ligne)
 
 
 
 	# Requêtes Complexes
-    curseur.execute("SELECT TOP(10) mot_cle, count(id_article) as occurences\
-					FROM Mot_cles AS mot\
-					INNER JOIN Contenir AS cont\
-					ON mot.id_mot_cle = cont.id_mot_cle\
-					GROUP BY id_mot_cle\
-					ORDER BY occurences;")
+    curseur.execute("""SELECT TOP(10) mot_cle, count(id_article) as occurences
+					FROM Mot_cles AS mot
+					INNER JOIN Contenir AS cont
+					ON mot.id_mot_cle = cont.id_mot_cle
+					GROUP BY id_mot_cle
+					ORDER BY occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT TOP(10) id_article, titre, count(nombre_citation) as citations\
-					FROM Articles\
-					GROUP BY id_article\
-					ORDER BY citations;")
+    curseur.execute("""SELECT TOP(10) id_article, titre, count(nombre_citation) as citations
+					FROM Articles
+					GROUP BY id_article
+					ORDER BY citations;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT TOP(10) id_article, titre, count(nombre_vue) as citations\
-					FROM Articles\
-					GROUP BY id_article\
-					ORDER BY nombre_vue;")
+    curseur.execute("""SELECT TOP(10) id_article, titre, count(nombre_vue) as citations
+					FROM Articles
+					GROUP BY id_article
+					ORDER BY nombre_vue;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT TOP(10) mot_cle, count(id_article) as occurences\
-					FROM Mot_cles AS mot\
-					INNER JOIN Contenir AS cont\
-					ON mot.id_mot_cle = cont.id_mot_cle\
-					WHERE rang_mot_cle_article = 1\
-					GROUP BY id_mot_cle\
-					ORDER BY occurences;")
+    curseur.execute("""SELECT TOP(10) mot_cle, count(id_article) as occurences
+					FROM Mot_cles AS mot
+					INNER JOIN Contenir AS cont
+					ON mot.id_mot_cle = cont.id_mot_cle
+					WHERE rang_mot_cle_article = 1
+					GROUP BY id_mot_cle
+					ORDER BY occurences;""")
     for ligne in curseur:
         print(ligne)
 
-    curseur.execute("SELECT TOP(10) mot_cle, count(id_article) as occurences\
-					FROM Mot_cles AS mot\
-					INNER JOIN Contenir AS cont\
-					ON mot.id_mot_cle = cont.id_mot_cle\
-					WHERE rang_mot_cle_article = 2\
-					GROUP BY id_mot_cle\
-					ORDER BY occurences;")
+    curseur.execute("""SELECT TOP(10) mot_cle, count(id_article) as occurences
+					FROM Mot_cles AS mot
+					INNER JOIN Contenir AS cont
+					ON mot.id_mot_cle = cont.id_mot_cle
+					WHERE rang_mot_cle_article = 2
+					GROUP BY id_mot_cle
+					ORDER BY occurences;""")
     for ligne in curseur:
         print(ligne)
 
