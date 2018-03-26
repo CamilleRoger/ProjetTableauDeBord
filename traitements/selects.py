@@ -8,7 +8,7 @@ import csv
 # sudo docker exec -it sql1 "bash"
 
 # Ouvrir le terminal de SQL Server
-# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewStrong!Passw0rd>'
+# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
 # SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
@@ -22,6 +22,7 @@ try:
     curseur.execute("""SELECT pays, count(id_article) as occurences
 					FROM Articles
 					GROUP BY pays
+                    HAVING count(id_article) > 30
 					ORDER By occurences DESC;""")
     with open("csv/Article_Par_Pays.csv", "w") as fichier_csv:
         writer = csv.writer(fichier_csv, delimiter=',')
@@ -33,7 +34,7 @@ try:
 					WHERE type = 'conference'
 					GROUP BY ville
 					ORDER By occurences DESC;""")
-    with open("csv/nombre_de_conference_dans_un_pays.csv", "w") as fichier_csv:
+    with open("csv/nombre_de_conference_dans_un_etat.csv", "w") as fichier_csv:
         writer = csv.writer(fichier_csv, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
@@ -45,25 +46,34 @@ try:
                     AND etat is not null
 					GROUP BY pays, etat
 					ORDER By pays, occurences DESC;""")
-    with open("csv/nombre_de_conference_dans_dans_un_etat.csv", "w") as fichier_csv:
+    with open("csv/nombre_de_conference_dans_dans_un_pays.csv", "w") as fichier_csv:
         writer = csv.writer(fichier_csv, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
 
-    curseur.execute("""SELECT YEAR(date_article), count(id_article) as occurences
-					FROM Articles
-					GROUP BY YEAR(date_article)
-					ORDER By occurences DESC;""")
-    with open("csv/nombre_d'article_par_an.csv", "w") as fichier_csv:
-        writer = csv.writer(fichier_csv, delimiter=',')
-        for ligne in curseur:
-            writer.writerow(ligne)
+    # curseur.execute("""SELECT YEAR(date_article), count(id_article) as occurences
+	# 				FROM Articles
+	# 				GROUP BY YEAR(date_article)
+	# 				ORDER By YEAR(date_article) DESC;""")
+    # with open("csv/nombre_d'article_par_an.csv", "w") as fichier_csv:
+    #     writer = csv.writer(fichier_csv, delimiter=',')
+    #     for ligne in curseur:
+    #         writer.writerow(ligne)
 
     curseur.execute("""SELECT MONTH(date_article), count(id_article) as occurences
 					FROM Articles
 					GROUP BY MONTH(date_article)
-					ORDER By occurences DESC;""")
+					ORDER By Month(date_article) DESC;""")
     with open("csv/nombre_d'article_par_mois.csv", "w") as fichier_csv:
+        writer = csv.writer(fichier_csv, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
+
+    curseur.execute("""SELECT Format(date_article, 'yyyy/MM'), count(id_article) as occurences
+					FROM Articles
+					GROUP BY Format(date_article, 'yyyy/MM')
+					ORDER By Format(date_article, 'yyyy/MM');""")
+    with open("csv/nombre_d'article_par_mois_annee.csv", "w") as fichier_csv:
         writer = csv.writer(fichier_csv, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
@@ -85,7 +95,7 @@ try:
 					GROUP BY nom_auteur
                     HAVING count(id_article) > 5
 					ORDER BY occurences DESC;""")
-    with open("csv/nom_d'article_par_auteur.csv", "w") as fichier_csv:
+    with open("csv/nombre_d'article_par_auteur.csv", "w") as fichier_csv:
         writer = csv.writer(fichier_csv, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
@@ -178,6 +188,26 @@ try:
         for ligne in curseur:
             writer.writerow(ligne)
 
+    curseur.execute("""with t as (
+                    SELECT distinct aut1.pays_auteur as p1, aut2.pays_auteur as p2, COUNT(ecr1.id_article) AS occurences
+					FROM Auteurs AS aut1, Auteurs AS aut2, Ecrire AS ecr1, Ecrire AS ecr2
+                    WHERE aut1.id_auteur = ecr1.id_auteur
+                    AND aut2.id_auteur = ecr2.id_auteur
+					AND ecr1.id_article = ecr2.id_article
+                    AND aut1.pays_auteur != aut2.pays_auteur
+					GROUP BY aut1.pays_auteur, aut2.pays_auteur
+					)
+                    select p1, p2, occurences
+                    from t
+                    union
+                    select p2, p1, occurences
+                    from t
+                    ORDER BY occurences;
+                    """)
+    with open("csv/pays_collaboration_auteurs.csv", "w") as fichier_csv:
+        writer = csv.writer(fichier_csv, delimiter=',')
+        for ligne in curseur:
+            writer.writerow(ligne)
 
     connexion.close()
 except pymssql.Error as e:
