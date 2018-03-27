@@ -7,7 +7,7 @@ import csv
 # sudo docker exec -it sql1 "bash"
 
 # Ouvrir le terminal de SQL Server
-# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewStrong!Passw0rd>'
+# /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
 # SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
