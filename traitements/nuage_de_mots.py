@@ -1,8 +1,8 @@
 from wordcloud import WordCloud
 
-
 # Read the whole text.
-text = open('csv/Top_des_mots_cles_de_rang_1.csv').read()
+text = open(
+    '/home/camille/Documents/ProjetTableauDeBord/csv/Top_des_mots_cles_de_rang_1.csv').read()
 
 # Generate a word cloud image
 wordcloud = WordCloud().generate(text)

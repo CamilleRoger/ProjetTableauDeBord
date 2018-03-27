@@ -11,14 +11,19 @@ import csv
 # /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
-# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
+# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE
+# dec.session_id = @@SPID;
 
 
 try:
-    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourStrong!Passw0rd>', database='Base1')
+    connexion = pymssql.connect(
+        server='172.17.0.2',
+        user='SA',
+        password='<YourStrong!Passw0rd>',
+        database='Base1')
     curseur = connexion.cursor()
 
-	# Nombre d'article
+    # Nombre d'article
     curseur.execute("""SELECT pays, count(id_article) as occurences
 					FROM Articles
 					GROUP BY pays
@@ -39,7 +44,6 @@ try:
         for ligne in curseur:
             writer.writerow(ligne)
 
-
     curseur.execute("""SELECT pays, etat, count(id_article) as occurences
 					FROM Articles
 					WHERE type = 'conference'
@@ -52,9 +56,9 @@ try:
             writer.writerow(ligne)
 
     # curseur.execute("""SELECT YEAR(date_article), count(id_article) as occurences
-	# 				FROM Articles
-	# 				GROUP BY YEAR(date_article)
-	# 				ORDER By YEAR(date_article) DESC;""")
+        # 				FROM Articles
+        # 				GROUP BY YEAR(date_article)
+        # 				ORDER By YEAR(date_article) DESC;""")
     # with open("csv/nombre_d'article_par_an.csv", "w") as fichier_csv:
     #     writer = csv.writer(fichier_csv, delimiter=',')
     #     for ligne in curseur:
@@ -100,7 +104,7 @@ try:
         for ligne in curseur:
             writer.writerow(ligne)
 
-	# Requêtes Complexes
+        # Requêtes Complexes
     curseur.execute("""SELECT TOP(20) mot_cle, count(id_article) as occurences
 					FROM Mot_cles, Contenir
 					Where Mot_cles.id_mot_cle = Contenir.id_mot_cle
@@ -151,7 +155,6 @@ try:
         for ligne in curseur:
             writer.writerow(ligne)
 
-
     curseur.execute("""SELECT pays_auteur, count(aut.id_auteur) as occurences
 						FROM Auteurs AS aut, Articles as art, Ecrire as ecr
                         Where aut.id_auteur = ecr.id_auteur
@@ -174,7 +177,6 @@ try:
         writer = csv.writer(fichier_csv, delimiter=',')
         for ligne in curseur:
             writer.writerow(ligne)
-
 
     curseur.execute("""SELECT nom_revue, count(aut.id_auteur) as occurences
 					FROM Auteurs AS aut, Ecrire AS ecr, Articles AS art

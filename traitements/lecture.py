@@ -10,11 +10,16 @@ import csv
 # /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
-# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
+# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE
+# dec.session_id = @@SPID;
 
 
 try:
-    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourStrong!Passw0rd>', database='Base1')
+    connexion = pymssql.connect(
+        server='172.17.0.2',
+        user='SA',
+        password='<YourStrong!Passw0rd>',
+        database='Base1')
     curseur = connexion.cursor()
 
     curseur.execute("SELECT * FROM Mot_cles")

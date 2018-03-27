@@ -11,14 +11,19 @@ import json
 # /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
-# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
+# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE
+# dec.session_id = @@SPID;
 
 
 try:
-    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourNewStrong!Passw0rd>', database='Base1')
+    connexion = pymssql.connect(
+        server='172.17.0.2',
+        user='SA',
+        password='<YourNewStrong!Passw0rd>',
+        database='Base1')
     curseur = connexion.cursor()
 
-	# Nombre d'article
+    # Nombre d'article
     curseur.execute("""SELECT pays, count(id_article) as occurences
 					FROM Articles
 					GROUP BY pays
@@ -72,9 +77,7 @@ try:
     for ligne in curseur:
         print(ligne)
 
-
-
-	# Requêtes Complexes
+        # Requêtes Complexes
     curseur.execute("""SELECT TOP(10) mot_cle, count(id_article) as occurences
 					FROM Mot_cles AS mot
 					INNER JOIN Contenir AS cont

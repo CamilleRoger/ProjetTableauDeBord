@@ -11,10 +11,15 @@ import json
 # /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '<YourNewSStrong!Passw0rd>'
 
 # Requete pour avoir l'adresse :
-# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE dec.session_id = @@SPID;
+# SELECT dec.local_net_address FROM sys.dm_exec_connections AS dec WHERE
+# dec.session_id = @@SPID;
 
 try:
-    connexion = pymssql.connect(server='172.17.0.2', user='SA', password='<YourNewStrong!Passw0rd>', database='Base1')
+    connexion = pymssql.connect(
+        server='172.17.0.2',
+        user='SA',
+        password='<YourNewStrong!Passw0rd>',
+        database='Base1')
     curseur = connexion.cursor()
 
     curseur.execute("""
@@ -77,14 +82,11 @@ try:
     	CONSTRAINT prk_constraint_contenir PRIMARY KEY NONCLUSTERED (id_article,id_mot_cle)
     );
 
-
-
     ALTER TABLE ecrire ADD CONSTRAINT FK_ecrire_id_article FOREIGN KEY (id_article) REFERENCES Articles(id_article);
     ALTER TABLE ecrire ADD CONSTRAINT FK_ecrire_id_auteur FOREIGN KEY (id_auteur) REFERENCES Auteurs(id_auteur);
     ALTER TABLE contenir ADD CONSTRAINT FK_contenir_id_article FOREIGN KEY (id_article) REFERENCES Articles(id_article);
     ALTER TABLE contenir ADD CONSTRAINT FK_contenir_id_mot_cle FOREIGN KEY (id_mot_cle) REFERENCES Mot_cles(id_mot_cle);
     """)
-
 
     connexion.commit()
     connexion.close()
